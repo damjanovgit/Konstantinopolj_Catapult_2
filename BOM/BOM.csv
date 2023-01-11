@@ -1,0 +1,111 @@
+Datum:,11.1.2023  ,,
+Tool:,,,
+,,,
+Broj komponenti:,73,,
+,,,
+Individual Components:,,,
+,,,
+Item,,Reference(s),Value
+,,C20,0.1uF
+,,C1,22pF
+,,C2,22pF
+,,C3,0.1uF
+,,C4,0.1uF
+,,C5,22uf
+,,C6,22uF
+,,C7,0.1uF
+,,C8,0.1uF
+,,C9,0.1uF
+,,C10,10uF
+,,C11,0.1uF
+,,C12,0.1uF
+,,C13,0.1uF
+,,C14,0.1uF
+,,C15,0.1uF
+,,C16,0.1uF
+,,C17,0.1uF
+,,C18,0.1uF
+,,C19,0.1uF
+,,H1,MountingHole
+,,H2,MountingHole
+,,H3,MountingHole
+,,H4,MountingHole
+,,J1,Conn_01x05_Male
+,,J2,Conn_01x05_Male
+,,J3,Conn_01x02_Male
+,,J4,USB_B
+,,J5,Conn_01x05_Male
+,,J6,Conn_01x05_Male
+,,J7,Conn_01x05_Male
+,,J8,Conn_01x05_Male
+,,J9,Conn_01x05_Male
+,,J10,Conn_01x05_Male
+,,J11,Conn_01x03_Male
+,,J12,Conn_01x03_Male
+,,R1,10k
+,,R2,10k
+,,R3,12k
+,,R4,300
+,,R5,7.5k
+,,R6,10k
+,,R7,10k
+,,R8,10k
+,,R9,14k
+,,R10,10k
+,,R11,10k
+,,R12,10k
+,,R13,10k
+,,R14,10k
+,,TP1.1,TestPoint_Small
+,,TP1.2,TestPoint_Small
+,,TP2.1,TestPoint_Small
+,,TP2.2,TestPoint_Small
+,,TP3.1,TestPoint_Small
+,,TP3.2,TestPoint_Small
+,,TP4.1,TestPoint_Small
+,,TP4.2,TestPoint_Small
+,,U1,PIC24FJ64GA702-I/SO
+,,U2,ABLS-8.000MHZ-B2-T
+,,U3,FT232RL
+,,U3.3V1,LM317BTG
+,,U4,CD74HC4514M96
+,,U5,74LVT573MTC
+,,U6,74LVT573MTC
+,,U7,74LVT573MTC
+,,U8,74LVT573MTC
+,,U9,74LVT573MTC
+,,U10,74LVT573MTC
+,,U11,ULN2003AIDR
+,,U12,ULN2003AIDR
+,,U13,ULN2003AIDR
+,,U14,ULN2003AIDR
+,,,
+,,,
+,,,
+Collated Components:,,,
+,,,
+Item,Qty,Reference(s),Value
+1,1,C20,0.1uF
+2,2,"C1, C2",22pF
+3,14,"C3, C4, C7, C8, C9, C11, C12, C13, C14, C15, C16, C17, C18, C19",0.1uF
+4,1,C5,22uf
+5,1,C6,22uF
+6,1,C10,10uF
+7,4,"H1, H2, H3, H4",MountingHole
+8,8,"J1, J2, J5, J6, J7, J8, J9, J10",Conn_01x05_Male
+9,1,J3,Conn_01x02_Male
+10,1,J4,USB_B
+11,2,"J11, J12",Conn_01x03_Male
+12,10,"R1, R2, R6, R7, R8, R10, R11, R12, R13, R14",10k
+13,1,R3,12k
+14,1,R4,300
+15,1,R5,7.5k
+16,1,R9,14k
+17,8,"TP1.1, TP1.2, TP2.1, TP2.2, TP3.1, TP3.2, TP4.1, TP4.2",TestPoint_Small
+18,1,U1,PIC24FJ64GA702-I/SO
+19,1,U2,ABLS-8.000MHZ-B2-T
+20,1,U3,FT232RL
+21,1,U3.3V1,LM317BTG
+22,1,U4,CD74HC4514M96
+23,6,"U5, U6, U7, U8, U9, U10",74LVT573MTC
+24,4,"U11, U12, U13, U14",ULN2003AIDR
