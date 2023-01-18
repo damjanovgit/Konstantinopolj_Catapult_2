@@ -7,4 +7,5 @@
   (lib (name "LM317BTG")(type "Legacy")(uri "${KIPRJMOD}/Library/LM317BTG/LM317BTG.lib")(options "")(descr ""))
   (lib (name "BFC237076105")(type "Legacy")(uri "${KIPRJMOD}/Library/BFC237076105/BFC237076105.lib")(options "")(descr ""))
   (lib (name "74LVT573MTC")(type "Legacy")(uri "${KIPRJMOD}/Library/74LVT573MTC/74LVT573MTC.lib")(options "")(descr ""))
+  (lib (name "2023-01-18_13-22-56")(type "Legacy")(uri "${KIPRJMOD}/Library/2023-01-18_13-22-56/2023-01-18_13-22-56.lib")(options "")(descr ""))
 )
