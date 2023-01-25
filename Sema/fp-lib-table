@@ -16,4 +16,6 @@
   (lib (name "Connector_USB")(type "KiCad")(uri "${KIPRJMOD}/Library/Connector_USB.pretty")(options "")(descr ""))
   (lib (name "Mounting_Wuerth")(type "KiCad")(uri "${KIPRJMOD}/Library/Mounting_Wuerth.pretty")(options "")(descr ""))
   (lib (name "MountingEquipment")(type "KiCad")(uri "${KIPRJMOD}/Library/MountingEquipment.pretty")(options "")(descr ""))
+  (lib (name "LM317AT")(type "KiCad")(uri "${KIPRJMOD}/Library/LM317AT/LM317AT")(options "")(descr ""))
+  (lib (name "PTMUX1308QDYYRQ1j")(type "KiCad")(uri "${KIPRJMOD}/Library/PTMUX1308QDYYRQ1/PTMUX1308QDYYRQ1j")(options "")(descr ""))
 )
