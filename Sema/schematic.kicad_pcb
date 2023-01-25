@@ -301,8 +301,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 307041ba-fe9f-4698-875c-3d565c468aa5)
     )
-    (fp_text value "0.1uF" (at 0 0 180 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 0 -1.653568 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 7a61b47e-1216-4a82-8d57-e3b0f1f22646)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -403,8 +403,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 080c5397-b9b1-4d91-aaa8-d22f8b81ee2a)
     )
-    (fp_text value "0.1uF" (at 0 0 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 2.257026 0 90 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp f9c8469e-6e39-4617-9e17-f22c835a9d00)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -728,8 +728,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6546c69b-b90b-41c3-8c0c-3aed1a19bd2a)
     )
-    (fp_text value "0.1uF" (at 0 0 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at -0.334273 -1.625184 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 9b9a8b02-1c3e-4350-a68c-a11496400671)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -830,8 +830,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 29ce4740-1f72-4ced-9dd2-05b5672d2b90)
     )
-    (fp_text value "0.1uF" (at 0 0 180 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 0 -1.632639 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp de14c47f-ad29-493d-9581-b5875e56d59d)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -1541,8 +1541,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c88aebaf-664f-429a-a9be-3eecc1447197)
     )
-    (fp_text value "10k" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "10k" (at 0 1.59536 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 0ac35ee7-dd9f-4e4f-bc58-730a44c8cf17)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -1911,8 +1911,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f98ea3d9-1bb8-4db7-8e36-8913e088f0c4)
     )
-    (fp_text value "22pF" (at -3.27 -0.9242 90 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "22pF" (at -0.059396 -1.908291 90 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 82fe0561-729d-42f6-bfbe-4af4375f90eb)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -1936,7 +1936,7 @@
       (tstamp beddd359-ef38-49d2-91d5-2ea4a6daa07a)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.Fab") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15) italic))
       (tstamp 87187947-9770-458f-99a5-4b9c77ed217f)
     )
     (fp_circle (center -2.2931 0) (end -2.2169 0) (layer "F.SilkS") (width 0.12) (fill none) (tstamp c2e3f753-7e51-462a-a1c0-9f9a40db5754))
@@ -2217,8 +2217,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 143a516f-0e03-4693-9106-bc70338e1b0c)
     )
-    (fp_text value "10k" (at 0 0) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "10k" (at 1.330861 -1.428097) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 9febcf33-4f12-4836-97c8-f3e99b649836)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -2374,8 +2374,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp eeaa4a86-6f46-4a96-8e0c-b325dc89f1c7)
     )
-    (fp_text value "10k" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "10k" (at 0.392012 -1.530683 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 2a3ccf77-2a7f-4fa4-b16f-d2531ef50b53)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -2476,8 +2476,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9ecc3e24-074e-4cd6-b994-686cbeca8c2d)
     )
-    (fp_text value "100uf" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "100uf" (at 1.1049 -1.82245 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.125)))
       (tstamp 8920bf4c-6077-4531-9e5d-8a30e548335f)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -2578,8 +2578,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c5d28a7c-88ba-4bdd-9eb9-ac6fdd03bb5a)
     )
-    (fp_text value "10k" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "10k" (at 0 1.588531 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp afd7ba8f-efbd-422a-846e-30a55ac71e09)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -2680,8 +2680,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6dc61447-84d2-4c6c-8c19-daf6395ad2f9)
     )
-    (fp_text value "0.1uF" (at 2.584594 -1.82245) (layer "F.SilkS")
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 1.1049 -1.82245) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 0099d0ce-e13b-47d1-8db6-ba60a5a35322)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -2870,8 +2870,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 626469f3-d449-4380-b38f-7dad165a7329)
     )
-    (fp_text value "10uF" (at -2.67537 1.424145 180) (layer "F.SilkS")
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "10uF" (at -2.322167 1.273232 180) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.125)))
       (tstamp 3898f5c8-ee96-4e35-bcf8-d01755d4153d)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -2972,8 +2972,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3101cd20-ff9a-4cb7-b8d4-4b03e8ce7d4f)
     )
-    (fp_text value "0.1uF" (at 0.141077 2.17015 90) (layer "F.SilkS")
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 0.3429 1.82245 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.125)))
       (tstamp 7055ee85-d667-44a6-a582-203649852f54)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -3297,8 +3297,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 45b05d24-fecd-498a-bab1-79cc4a63c261)
     )
-    (fp_text value "0.1uF" (at 3.437136 1.700644) (layer "F.SilkS")
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 2.305733 -0.005704 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.125)))
       (tstamp 8efa7566-4ef6-4267-9e7c-7c7a25dc47ae)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -3399,8 +3399,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1e3dfc2c-dfa6-4871-bdb2-3a6f84b9d720)
     )
-    (fp_text value "10k" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "10k" (at 0 -1.674975 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 435989c5-1830-42a8-adc5-2ff2cb950ff6)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -3984,8 +3984,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8a6bd39e-9efe-47e6-950a-5755b6c15e19)
     )
-    (fp_text value "22pF" (at 3.27 0.9242 90 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "22pF" (at 0.3429 1.82245 90 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.125)))
       (tstamp e9a1b587-56ab-4dc7-9643-64ef2ffb41d3)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -4290,8 +4290,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp bd9f768a-923f-454e-bcda-bb5695ef2718)
     )
-    (fp_text value "0.1uF" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 2.321256 -1.066997 180) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 7c9746a6-3d5c-4dd7-ba24-b83ba0f62b1c)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -4392,8 +4392,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9dbd1724-5dae-4465-8a68-5b4af8fa78a1)
     )
-    (fp_text value "0.1uF" (at 0 0 180 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 0 -1.536688 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp f61e716f-645b-424c-ad34-ddee42d2e554)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -4582,8 +4582,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 03e48a7d-cbfe-454a-bd5a-26805d2a84ce)
     )
-    (fp_text value "820" (at 0 0) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "820" (at 2.047174 0.237643 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.125)))
       (tstamp 87089015-e57b-44c0-ab43-e438098e5639)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -5116,8 +5116,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 26b4c164-5980-4dde-afb2-1a696e6d4564)
     )
-    (fp_text value "0.1uF" (at 0 0 90 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at -1.1049 -1.82245 90 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.125)))
       (tstamp ee51b7e7-b4a7-45c7-82f5-a5f45efaeef8)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -5218,8 +5218,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ba0ab6a2-44a6-4b13-97c2-436528e25a5d)
     )
-    (fp_text value "300" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "300" (at 0 1.626274 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp ab09774e-407c-4c27-8fcc-489aa0e2ca9d)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -5588,8 +5588,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp be3e9971-8b49-42da-81a1-097cb1e96c5d)
     )
-    (fp_text value "0.1uF" (at 0 0 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 2.216427 -0.042207 90 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 1129f830-329c-4108-8916-26fc92adf1ea)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -5792,8 +5792,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 56a0053f-6c60-4653-8b2e-1fa32fb09e97)
     )
-    (fp_text value "0.1uF" (at 0 0 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 0.009165 -1.340532 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 73806fef-d7e3-45f9-ac57-9f4f3d68744b)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -5920,8 +5920,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 87a8f7d4-4c64-4664-bc76-14f2f14cb99b)
     )
-    (fp_text value "7.5k" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "7.5k" (at 0.502682 -1.566018 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 9094a2a7-0685-4a33-8877-97cb18bb4438)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -6080,8 +6080,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2c1272b9-11c6-47a9-a811-e195648a4ada)
     )
-    (fp_text value "10k" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "10k" (at 0 -1.523854 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp c79025bc-fb9b-4ced-8877-9010f87cea9d)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -6557,8 +6557,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 560726d6-d645-494d-b5f5-5fc561a31a8c)
     )
-    (fp_text value "0.1uF" (at 0 0 180 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 0.000701 -1.536289 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 453bc69b-5e56-4cfc-9cb4-395a2a98f09c)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -6685,8 +6685,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ce8251e5-6562-4f25-aed1-f79fd869c97d)
     )
-    (fp_text value "10k" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "10k" (at 0 -1.629066 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 40caf2ed-92ef-4092-9b87-597d2158e6c8)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -7104,8 +7104,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 06420b79-f1fc-4026-bc01-d815d7cfcd4d)
     )
-    (fp_text value "10k" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "10k" (at 0 -1.648496 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 953188df-026e-4e08-b76a-ee4958acb34e)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -7261,8 +7261,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 38c9a532-f205-4b89-a4b8-646c0ba56a65)
     )
-    (fp_text value "0.1uF" (at -16.46 4.18 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at -0.857075 -1.668 90 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.125)))
       (tstamp 603c99c3-e081-4161-8f03-fa803b4c011f)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -7363,8 +7363,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e262845a-c926-4783-9b5f-8a5b502249cd)
     )
-    (fp_text value "10k" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "10k" (at 0 -1.712315 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp efa5457a-7368-409f-ae27-741022355750)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -7664,8 +7664,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 36c7a529-9c48-4cc8-b39d-47cdef98a63f)
     )
-    (fp_text value "270" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "270" (at -0.222523 1.630187 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 194ffc13-377a-4b2f-81f5-2f5c9497fb3d)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -7766,8 +7766,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 234e2d06-9e63-418c-aa07-cb573f7a69fe)
     )
-    (fp_text value "0.1uF" (at -0.46 -1.8 -90 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 2.413884 -1.637849 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.125)))
       (tstamp 55da4021-f19e-4e86-afbd-9e5c00bd3d34)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -7868,8 +7868,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2c48407f-77b6-4359-92c4-0fa4f7f46840)
     )
-    (fp_text value "08055A220JAT2A" (at 0 0 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 2.215815 -0.384754 90 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp bcd6f5dd-c5bd-4461-9a39-d03bb04b08ff)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
@@ -8016,8 +8016,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7d02c8da-c1f5-46b6-a684-03b1f9fa82ce)
     )
-    (fp_text value "0.1uF" (at 0 0 270 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at -2.308519 1.269898 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 66b19a0b-d07c-43ff-9bd5-abe61a163306)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -8118,8 +8118,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2420bccc-0332-4f5c-a5fe-ede266b51081)
     )
-    (fp_text value "10k" (at 0 0 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "10k" (at 0 -1.621052 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp 5c51d4d7-b432-42c1-8086-b4cfce498694)
     )
     (fp_text user "*" (at 0 0 90) (layer "F.SilkS") hide
@@ -8721,8 +8721,8 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e2d5f785-fe9e-4e51-87a6-1fd3891e4b7d)
     )
-    (fp_text value "0.1uF" (at 0 0) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text value "0.1uF" (at 2.406043 0.403195 90) (layer "F.SilkS")
+      (effects (font (size 0.5 0.5) (thickness 0.15)))
       (tstamp b2cf7443-b48e-4fc1-9810-3b278132eb2c)
     )
     (fp_text user "*" (at 0 0) (layer "F.SilkS") hide
