@@ -1,111 +1,120 @@
-Datum:,11.1.2023  ,,,,,
-Tool:,,,,,,
-,,,,,,
-Broj komponenti:,73,,,,,
-,,,,,,
-Individual Components:,,,,,,
-,,,,,,
-Item,,Reference(s),Value,LibPart,Footprint,Datasheet
-,,C20,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C1,22pF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C2,22pF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C3,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C4,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C5,22uf,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C6,22uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C7,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C8,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C9,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C10,10uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C11,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C12,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C13,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C14,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C15,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C16,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C17,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C18,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,C19,0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-,,H1,MountingHole,Mechanical:MountingHole,MountingHole:MountingHole_2.5mm,~
-,,H2,MountingHole,Mechanical:MountingHole,MountingHole:MountingHole_2.5mm,~
-,,H3,MountingHole,Mechanical:MountingHole,MountingHole:MountingHole_2.5mm,~
-,,H4,MountingHole,Mechanical:MountingHole,MountingHole:MountingHole_2.5mm,~
-,,J1,Conn_01x05_Male,Connector:Conn_01x05_Male,Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical,~
-,,J2,Conn_01x05_Male,Connector:Conn_01x05_Male,Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical,~
-,,J3,Conn_01x02_Male,Connector:Conn_01x02_Male,Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical,~
-,,J4,USB_B,Connector:USB_B,Connector_USB:USB_B_TE_5787834_Vertical, ~
-,,J5,Conn_01x05_Male,Connector:Conn_01x05_Male,Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical,~
-,,J6,Conn_01x05_Male,Connector:Conn_01x05_Male,Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical,~
-,,J7,Conn_01x05_Male,Connector:Conn_01x05_Male,Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical,~
-,,J8,Conn_01x05_Male,Connector:Conn_01x05_Male,Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical,~
-,,J9,Conn_01x05_Male,Connector:Conn_01x05_Male,Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical,~
-,,J10,Conn_01x05_Male,Connector:Conn_01x05_Male,Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical,~
-,,J11,Conn_01x03_Male,Connector:Conn_01x03_Male,Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical,~
-,,J12,Conn_01x03_Male,Connector:Conn_01x03_Male,Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical,~
-,,R1,10k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R2,10k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R3,12k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R4,300,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R5,7.5k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R6,10k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R7,10k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R8,10k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R9,14k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R10,10k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R11,10k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R12,10k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R13,10k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,R14,10k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-,,TP1.1,TestPoint_Small,Connector:TestPoint_Small,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,~
-,,TP1.2,TestPoint_Small,Connector:TestPoint_Small,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,~
-,,TP2.1,TestPoint_Small,Connector:TestPoint_Small,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,~
-,,TP2.2,TestPoint_Small,Connector:TestPoint_Small,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,~
-,,TP3.1,TestPoint_Small,Connector:TestPoint_Small,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,~
-,,TP3.2,TestPoint_Small,Connector:TestPoint_Small,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,~
-,,TP4.1,TestPoint_Small,Connector:TestPoint_Small,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,~
-,,TP4.2,TestPoint_Small,Connector:TestPoint_Small,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,~
-,,U1,PIC24FJ64GA702-I/SO,PIC24FJ64GA702-ISO:PIC24FJ64GA702-I{slash}SO,PIC24FJ64GA702-ISO:PIC24FJ64GA702-I&slash_SO,
-,,U2,ABLS-8.000MHZ-B2-T,2022-12-14_18-13-08:ABLS-8.000MHZ-B2-T,ABLS-8:ABLS-8.000MHZ-B2-T,
-,,U3,FT232RL,Interface_USB:FT232RL,Package_SO:SSOP-28_5.3x10.2mm_P0.65mm,https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
-,,U3.3V1,LM317BTG,LM317BTG:LM317BTG,LM317BTGj:LM317BTG,
-,,U4,CD74HC4514M96,CD74HC4514M96:CD74HC4514M96,CD74HC4514M96j:CD74HC4514M96,
-,,U5,74LVT573MTC,74LVT573MTC:74LVT573MTC,74LVT573MTCj:74LVT573MTC,
-,,U6,74LVT573MTC,74LVT573MTC:74LVT573MTC,74LVT573MTCj:74LVT573MTC,
-,,U7,74LVT573MTC,74LVT573MTC:74LVT573MTC,74LVT573MTCj:74LVT573MTC,
-,,U8,74LVT573MTC,74LVT573MTC:74LVT573MTC,74LVT573MTCj:74LVT573MTC,
-,,U9,74LVT573MTC,74LVT573MTC:74LVT573MTC,74LVT573MTCj:74LVT573MTC,
-,,U10,74LVT573MTC,74LVT573MTC:74LVT573MTC,74LVT573MTCj:74LVT573MTC,
-,,U11,ULN2003AIDR,ULN2003AIDR:ULN2003AIDR,ULN2003AIDRj:ULN2003AIDR,
-,,U12,ULN2003AIDR,ULN2003AIDR:ULN2003AIDR,ULN2003AIDRj:ULN2003AIDR,
-,,U13,ULN2003AIDR,ULN2003AIDR:ULN2003AIDR,ULN2003AIDRj:ULN2003AIDR,
-,,U14,ULN2003AIDR,ULN2003AIDR:ULN2003AIDR,ULN2003AIDRj:ULN2003AIDR,
-,,,,,,
-,,,,,,
-,,,,,,
-Collated Components:,,,,,,
-,,,,,,
-Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet
-1,1,0.1uF1,08055A220JAT2A,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-2,2,"C1, C2",22pF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-3,14,"C3, C4, C7, C8, C9, C11, C12, C13, C14, C15, C16, C17, C18, C19",0.1uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-4,1,C5,22uf,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-5,1,C6,22uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-6,1,C10,10uF,2022-12-14_18-04-28:08055A220JAT2A,footprints:08055A220JAT2A,
-7,4,"H1, H2, H3, H4",MountingHole,Mechanical:MountingHole,MountingHole:MountingHole_2.5mm,~
-8,8,"J1, J2, J5, J6, J7, J8, J9, J10",Conn_01x05_Male,Connector:Conn_01x05_Male,Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical,~
-9,1,J3,Conn_01x02_Male,Connector:Conn_01x02_Male,Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical,~
-10,1,J4,USB_B,Connector:USB_B,Connector_USB:USB_B_TE_5787834_Vertical, ~
-11,2,"J11, J12",Conn_01x03_Male,Connector:Conn_01x03_Male,Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical,~
-12,10,"R1, R2, R6, R7, R8, R10, R11, R12, R13, R14",10k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-13,1,R3,12k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-14,1,R4,300,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-15,1,R5,7.5k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-16,1,R9,14k,HCJ0805ZT0R00:HCJ0805ZT0R00,HCJ0805ZT0R00j:HCJ0805ZT0R00,
-17,8,"TP1.1, TP1.2, TP2.1, TP2.2, TP3.1, TP3.2, TP4.1, TP4.2",TestPoint_Small,Connector:TestPoint_Small,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,~
-18,1,U1,PIC24FJ64GA702-I/SO,PIC24FJ64GA702-ISO:PIC24FJ64GA702-I{slash}SO,PIC24FJ64GA702-ISO:PIC24FJ64GA702-I&slash_SO,
-19,1,U2,ABLS-8.000MHZ-B2-T,2022-12-14_18-13-08:ABLS-8.000MHZ-B2-T,ABLS-8:ABLS-8.000MHZ-B2-T,
-20,1,U3,FT232RL,Interface_USB:FT232RL,Package_SO:SSOP-28_5.3x10.2mm_P0.65mm,https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
-21,1,U3.3V1,LM317BTG,LM317BTG:LM317BTG,LM317BTGj:LM317BTG,
-22,1,U4,CD74HC4514M96,CD74HC4514M96:CD74HC4514M96,CD74HC4514M96j:CD74HC4514M96,
-23,6,"U5, U6, U7, U8, U9, U10",74LVT573MTC,74LVT573MTC:74LVT573MTC,74LVT573MTCj:74LVT573MTC,
-24,4,"U11, U12, U13, U14",ULN2003AIDR,ULN2003AIDR:ULN2003AIDR,ULN2003AIDRj:ULN2003AIDR,
+"Source:","D:\IV\Racunarska elektronika\projektni_zadatak\project_git\Konstantinopolj_Catapult_2\Sema\schematic.kicad_sch"
+"Date:","1/25/2023 11:00:19 PM"
+"Tool:","Eeschema (6.0.2)"
+"Generator:","C:\Program Files\KiCad\6.0\bin\scripting\plugins/bom_csv_grouped_by_value.py"
+"Component Count:","80"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"","","0.1uF1","08055A220JAT2A","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C1","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C2","100uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C3","22pF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C4","22pF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C5","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C6","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C7","100uf","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C8","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C9","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C10","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C11","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C12","10uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C13","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C14","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C15","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C16","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C17","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C18","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C19","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C20","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C21","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","C22","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"","","H1","MountingHole","Mechanical:MountingHole","MountingHole:MountingHole_3.5mm","~"
+"","","H2","MountingHole","Mechanical:MountingHole","MountingHole:MountingHole_3.5mm","~"
+"","","H3","MountingHole","Mechanical:MountingHole","MountingHole:MountingHole_3.5mm","~"
+"","","H4","MountingHole","Mechanical:MountingHole","MountingHole:MountingHole_3.5mm","~"
+"","","J1","Conn_01x05_Male","Connector:Conn_01x05_Male","Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical","~"
+"","","J2","Conn_01x02_Male","Connector:Conn_01x02_Male","Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical","~"
+"","","J3","Conn_01x03_Male","Connector:Conn_01x03_Male","Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical","~"
+"","","J4","Conn_01x05_Male","Connector:Conn_01x05_Male","Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical","~"
+"","","J5","Conn_01x03_Male","Connector:Conn_01x03_Male","Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical","~"
+"","","J6","USB_B","Connector:USB_B","Connector_USB:USB_B_TE_5787834_Vertical"," ~"
+"","","J7","Conn_01x05_Male","Connector:Conn_01x05_Male","Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical","~"
+"","","J8","Conn_01x05_Male","Connector:Conn_01x05_Male","Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical","~"
+"","","J9","Conn_01x05_Male","Connector:Conn_01x05_Male","Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical","~"
+"","","J10","Conn_01x05_Male","Connector:Conn_01x05_Male","Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical","~"
+"","","J11","Conn_01x05_Male","Connector:Conn_01x05_Male","Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical","~"
+"","","J12","Conn_01x05_Male","Connector:Conn_01x05_Male","Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical","~"
+"","","R1","10k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R2","10k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R3","270","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R4","820","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R5","300","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R6","7.5k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R7","10k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R8","10k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R9","10k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R10","10k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R11","10k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R12","10k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R13","10k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","R14","10k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"","","TP1.1","TestPoint_Small","Connector:TestPoint_Small","Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical","~"
+"","","TP1.2","TestPoint_Small","Connector:TestPoint_Small","Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical","~"
+"","","TP2.1","TestPoint_Small","Connector:TestPoint_Small","Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical","~"
+"","","TP2.2","TestPoint_Small","Connector:TestPoint_Small","Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical","~"
+"","","TP3.1","TestPoint_Small","Connector:TestPoint_Small","Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical","~"
+"","","TP3.2","TestPoint_Small","Connector:TestPoint_Small","Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical","~"
+"","","TP4.1","TestPoint_Small","Connector:TestPoint_Small","Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical","~"
+"","","TP4.2","TestPoint_Small","Connector:TestPoint_Small","Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical","~"
+"","","TP5.1","TestPoint_Small","Connector:TestPoint_Small","Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical","~"
+"","","TP5.2","TestPoint_Small","Connector:TestPoint_Small","Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical","~"
+"","","U1","LM317AT/NOPB","LM317AT&slash_NOPB:LM317AT{slash}NOPB","LM317AT:LM317AT",""
+"","","U2","LM317AT/NOPB","LM317AT&slash_NOPB:LM317AT{slash}NOPB","LM317AT:LM317AT",""
+"","","U3","PIC24FJ64GA702-I/SO","PIC24FJ64GA702-ISO:PIC24FJ64GA702-I{slash}SO","PIC24FJ64GA702-ISO:PIC24FJ64GA702-I&slash_SO",""
+"","","U4","ABLS-8.000MHZ-B2-T","2022-12-14_18-13-08:ABLS-8.000MHZ-B2-T","ABLS-8:ABLS-8.000MHZ-B2-T",""
+"","","U5","FT232RL","Interface_USB:FT232RL","Package_SO:SSOP-28_5.3x10.2mm_P0.65mm","https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf"
+"","","U6","CD74HC4514M96","CD74HC4514M96:CD74HC4514M96","CD74HC4514M96j:CD74HC4514M96",""
+"","","U7","PTMUX1308QDYYRQ1","2023-01-18_13-22-56:PTMUX1308QDYYRQ1","PTMUX1308QDYYRQ1j:PTMUX1308QDYYRQ1",""
+"","","U8","74LVT573MTC","74LVT573MTC:74LVT573MTC","74LVT573MTCj:74LVT573MTC",""
+"","","U9","74LVT573MTC","74LVT573MTC:74LVT573MTC","74LVT573MTCj:74LVT573MTC",""
+"","","U10","74LVT573MTC","74LVT573MTC:74LVT573MTC","74LVT573MTCj:74LVT573MTC",""
+"","","U11","74LVT573MTC","74LVT573MTC:74LVT573MTC","74LVT573MTCj:74LVT573MTC",""
+"","","U12","74LVT573MTC","74LVT573MTC:74LVT573MTC","74LVT573MTCj:74LVT573MTC",""
+"","","U13","74LVT573MTC","74LVT573MTC:74LVT573MTC","74LVT573MTCj:74LVT573MTC",""
+"","","U14","ULN2003AIDR","ULN2003AIDR:ULN2003AIDR","ULN2003AIDRj:ULN2003AIDR",""
+"","","U15","ULN2003AIDR","ULN2003AIDR:ULN2003AIDR","ULN2003AIDRj:ULN2003AIDR",""
+"","","U16","ULN2003AIDR","ULN2003AIDR:ULN2003AIDR","ULN2003AIDRj:ULN2003AIDR",""
+"","","U17","ULN2003AIDR","ULN2003AIDR:ULN2003AIDR","ULN2003AIDRj:ULN2003AIDR",""
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"1","1","0.1uF1","08055A220JAT2A","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"2","17","C1, C5, C6, C8, C9, C10, C11, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22","0.1uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"3","1","C2","100uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"4","2","C3, C4","22pF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"5","1","C7","100uf","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"6","1","C12","10uF","2022-12-14_18-04-28:08055A220JAT2A","footprints:08055A220JAT2A",""
+"7","4","H1, H2, H3, H4","MountingHole","Mechanical:MountingHole","MountingHole:MountingHole_3.5mm","~"
+"8","8","J1, J4, J7, J8, J9, J10, J11, J12","Conn_01x05_Male","Connector:Conn_01x05_Male","Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical","~"
+"9","1","J2","Conn_01x02_Male","Connector:Conn_01x02_Male","Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical","~"
+"10","2","J3, J5","Conn_01x03_Male","Connector:Conn_01x03_Male","Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical","~"
+"11","1","J6","USB_B","Connector:USB_B","Connector_USB:USB_B_TE_5787834_Vertical"," ~"
+"12","10","R1, R2, R7, R8, R9, R10, R11, R12, R13, R14","10k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"13","1","R3","270","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"14","1","R4","820","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"15","1","R5","300","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"16","1","R6","7.5k","HCJ0805ZT0R00:HCJ0805ZT0R00","HCJ0805ZT0R00j:HCJ0805ZT0R00",""
+"17","10","TP1.1, TP1.2, TP2.1, TP2.2, TP3.1, TP3.2, TP4.1, TP4.2, TP5.1, TP5.2","TestPoint_Small","Connector:TestPoint_Small","Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical","~"
+"18","2","U1, U2","LM317AT/NOPB","LM317AT&slash_NOPB:LM317AT{slash}NOPB","LM317AT:LM317AT",""
+"19","1","U3","PIC24FJ64GA702-I/SO","PIC24FJ64GA702-ISO:PIC24FJ64GA702-I{slash}SO","PIC24FJ64GA702-ISO:PIC24FJ64GA702-I&slash_SO",""
+"20","1","U4","ABLS-8.000MHZ-B2-T","2022-12-14_18-13-08:ABLS-8.000MHZ-B2-T","ABLS-8:ABLS-8.000MHZ-B2-T",""
+"21","1","U5","FT232RL","Interface_USB:FT232RL","Package_SO:SSOP-28_5.3x10.2mm_P0.65mm","https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf"
+"22","1","U6","CD74HC4514M96","CD74HC4514M96:CD74HC4514M96","CD74HC4514M96j:CD74HC4514M96",""
+"23","1","U7","PTMUX1308QDYYRQ1","2023-01-18_13-22-56:PTMUX1308QDYYRQ1","PTMUX1308QDYYRQ1j:PTMUX1308QDYYRQ1",""
+"24","6","U8, U9, U10, U11, U12, U13","74LVT573MTC","74LVT573MTC:74LVT573MTC","74LVT573MTCj:74LVT573MTC",""
+"25","4","U14, U15, U16, U17","ULN2003AIDR","ULN2003AIDR:ULN2003AIDR","ULN2003AIDRj:ULN2003AIDR",""
