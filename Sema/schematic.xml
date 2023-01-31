@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>D:\IV\Racunarska elektronika\projektni_zadatak\project_git\Konstantinopolj_Catapult_2\Sema\schematic.kicad_sch</source>
-    <date>1/25/2023 11:00:19 PM</date>
+    <date>1/31/2023 10:14:45 AM</date>
     <tool>Eeschema (6.0.2)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -277,13 +277,13 @@
       <tstamps>b3ccbd04-3245-4763-83b9-29ea9b5a4c74</tstamps>
     </comp>
     <comp ref="J2">
-      <value>Conn_01x02_Male</value>
-      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical</footprint>
-      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <value>Conn_01x01_Male</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="schematic.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>697ffeda-6a7c-402a-abcb-06ce0db9e2f3</tstamps>
+      <tstamps>e21396fb-d38d-4523-9a75-52acb1f5f431</tstamps>
     </comp>
     <comp ref="J3">
       <value>Conn_01x03_Male</value>
@@ -375,6 +375,42 @@
       <property name="Sheetfile" value="schematic.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>6e12cf64-3699-4a96-80ed-564dec7172de</tstamps>
+    </comp>
+    <comp ref="J13">
+      <value>Conn_01x01_Male</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>894fa2bf-3083-4b85-b49f-7d9b94114f85</tstamps>
+    </comp>
+    <comp ref="J14">
+      <value>Conn_01x01_Male</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08e3b1d0-8d2b-47e7-8df6-32d62de82992</tstamps>
+    </comp>
+    <comp ref="J15">
+      <value>Conn_01x01_Male</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0fd9e7fd-239f-483c-a826-c2d13d20d042</tstamps>
+    </comp>
+    <comp ref="J16">
+      <value>Conn_01x01_Male</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x01_Male" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f39779ce-f999-4bfa-a46d-f05578e9898f</tstamps>
     </comp>
     <comp ref="R1">
       <value>10k</value>
@@ -502,6 +538,15 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d9288dce-9554-44c2-a8f5-6198c65041fa</tstamps>
     </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f3c4c1cc-8868-44d7-948d-3b03c25e0506</tstamps>
+    </comp>
     <comp ref="TP1.1">
       <value>TestPoint_Small</value>
       <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
@@ -519,6 +564,15 @@
       <property name="Sheetfile" value="schematic.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>6cf87a41-c731-4f1d-aeae-4885fafd88ae</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f4c905bb-1b07-43f3-b100-6a543b5c7b28</tstamps>
     </comp>
     <comp ref="TP2.1">
       <value>TestPoint_Small</value>
@@ -538,6 +592,15 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a1cbd1a9-085f-4c12-be40-1ad6b4afb798</tstamps>
     </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>49ad1df5-1ee4-4b4d-a502-67993612e8ae</tstamps>
+    </comp>
     <comp ref="TP3.1">
       <value>TestPoint_Small</value>
       <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
@@ -555,6 +618,15 @@
       <property name="Sheetfile" value="schematic.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>67f8a5d7-a9af-4ac2-8d12-22df084936bd</tstamps>
+    </comp>
+    <comp ref="TP4">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8b9b654-aec5-4029-99a5-e4f8b8f13307</tstamps>
     </comp>
     <comp ref="TP4.1">
       <value>TestPoint_Small</value>
@@ -574,6 +646,15 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>88f02917-3d00-4810-873a-c1b41e7afed4</tstamps>
     </comp>
+    <comp ref="TP5">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bdc16d66-fd23-43dd-ac86-74127ef4178f</tstamps>
+    </comp>
     <comp ref="TP5.1">
       <value>TestPoint_Small</value>
       <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
@@ -591,6 +672,60 @@
       <property name="Sheetfile" value="schematic.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>53435ded-2fa1-4713-8832-c304e660ac81</tstamps>
+    </comp>
+    <comp ref="TP6">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9ede586f-dca7-4854-bbef-676efddee680</tstamps>
+    </comp>
+    <comp ref="TP7">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e6f3ca84-8896-47e7-a8f4-6f33539f0027</tstamps>
+    </comp>
+    <comp ref="TP8">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8d2aa83-26a4-4100-b94c-3004e62f5bc3</tstamps>
+    </comp>
+    <comp ref="TP9">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eddbb651-9f21-4a0c-8e4f-a08a69654808</tstamps>
+    </comp>
+    <comp ref="TP10">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>457bbf4d-b520-4023-b9e0-54a64997add9</tstamps>
+    </comp>
+    <comp ref="TP11">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="schematic.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6bfc4350-57f8-4b15-85ce-099bad026929</tstamps>
     </comp>
     <comp ref="U1">
       <value>LM317AT/NOPB</value>
@@ -882,20 +1017,19 @@
         <pin num="24" name="VCC" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="Connector" part="Conn_01x02_Male">
-      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+    <libpart lib="Connector" part="Conn_01x01_Male">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
       <footprints>
-        <fp>Connector*:*_1x??_*</fp>
+        <fp>Connector*:*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_01x02_Male</field>
+        <field name="Value">Conn_01x01_Male</field>
         <field name="Datasheet">~</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
-        <pin num="2" name="Pin_2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector" part="Conn_01x03_Male">
@@ -932,6 +1066,22 @@
         <pin num="3" name="Pin_3" type="passive"/>
         <pin num="4" name="Pin_4" type="passive"/>
         <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector" part="TestPoint_Small">
@@ -1184,6 +1334,7 @@
       <node ref="R7" pin="1" pinfunction="1" pintype="unspecified"/>
       <node ref="TP1.2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP2.2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP3.2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP4.2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP5.2" pin="1" pinfunction="1" pintype="passive"/>
@@ -1202,6 +1353,7 @@
       <node ref="C2" pin="2" pinfunction="2" pintype="unspecified"/>
       <node ref="J6" pin="1" pinfunction="VBUS" pintype="power_out"/>
       <node ref="R3" pin="2" pinfunction="2" pintype="unspecified"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="OUT" pintype="power_in"/>
       <node ref="U5" pin="20" pinfunction="VCC" pintype="power_in"/>
     </net>
@@ -1311,26 +1463,32 @@
       <node ref="U9" pin="5" pinfunction="D3" pintype="unspecified"/>
     </net>
     <net code="20" name="E1">
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="11" pinfunction="Y0" pintype="output"/>
       <node ref="U8" pin="11" pinfunction="LE" pintype="unspecified"/>
     </net>
     <net code="21" name="E2">
+      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="9" pinfunction="Y1" pintype="output"/>
       <node ref="U9" pin="11" pinfunction="LE" pintype="unspecified"/>
     </net>
     <net code="22" name="E3">
+      <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U10" pin="11" pinfunction="LE" pintype="unspecified"/>
       <node ref="U6" pin="10" pinfunction="Y2" pintype="output"/>
     </net>
     <net code="23" name="E4">
+      <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U11" pin="11" pinfunction="LE" pintype="unspecified"/>
       <node ref="U6" pin="8" pinfunction="Y3" pintype="output"/>
     </net>
     <net code="24" name="E5">
+      <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U12" pin="11" pinfunction="LE" pintype="unspecified"/>
       <node ref="U6" pin="7" pinfunction="Y4" pintype="output"/>
     </net>
     <net code="25" name="E6">
+      <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U13" pin="11" pinfunction="LE" pintype="unspecified"/>
       <node ref="U6" pin="6" pinfunction="Y5" pintype="output"/>
     </net>
@@ -1358,7 +1516,10 @@
       <node ref="C8" pin="2" pinfunction="2" pintype="unspecified"/>
       <node ref="C9" pin="1" pinfunction="1" pintype="unspecified"/>
       <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
-      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J13" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J14" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J15" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J16" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="J6" pin="4" pinfunction="GND" pintype="power_out"/>
       <node ref="R10" pin="1" pinfunction="1" pintype="unspecified"/>
@@ -1467,6 +1628,7 @@
     <net code="36" name="Net-(J3-Pad2)">
       <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="*MCLR" pintype="unspecified"/>
     </net>
     <net code="37" name="Net-(J5-Pad3)">
@@ -1673,6 +1835,7 @@
       <node ref="U17" pin="3" pinfunction="3B" pintype="unspecified"/>
     </net>
     <net code="85" name="RX">
+      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="7" pinfunction="AN5/C1INA/RP3/SCL2/CTED8/RB3" pintype="bidirectional"/>
       <node ref="U5" pin="1" pinfunction="TXD" pintype="output"/>
     </net>
@@ -1718,6 +1881,7 @@
       <node ref="U17" pin="16" pinfunction="1C" pintype="unspecified"/>
     </net>
     <net code="96" name="tx">
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="6" pinfunction="AN4/C1INB/RP2/SDA2/CTED13/RB2" pintype="bidirectional"/>
       <node ref="U5" pin="5" pinfunction="RXD" pintype="input"/>
     </net>
