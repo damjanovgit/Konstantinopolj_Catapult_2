@@ -14,6 +14,8 @@ main
 		_Divide_32x32
 	UART1_Write_Text
 		UART1_Write
+	kalibracija
+		rotiraj
 	strcmp
 	rotiraj
 	atoi

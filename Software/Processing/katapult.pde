@@ -43,7 +43,7 @@ void setup(){
   
   
   printArray(Serial.list());
-  myPort = new Serial(this, Serial.list()[0], 9600);
+  myPort = new Serial(this, Serial.list()[2], 9600);
 }
 
 void draw(){
@@ -155,6 +155,9 @@ void keyPressed(){
   }
   if(key == 'G' || key == 'g'){
     myPort.write("Nq");
+  }
+  if(key == 'B' || key == 'b'){
+    myPort.write("Bq");
   }
   if(key == 32){
     myPort.write("Iq");
