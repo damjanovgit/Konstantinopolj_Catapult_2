@@ -3518,6 +3518,7 @@ ilr2_bit
 ilr3
 ilr3
 ilr3_bit
+indexes
 int0ep
 int0ep
 int0ep_bit
@@ -5188,6 +5189,7 @@ parie
 parie
 parie
 parie_bit
+pauza
 pch
 pcie
 pcie

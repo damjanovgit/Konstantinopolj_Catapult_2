@@ -6,10 +6,10 @@ float rezolucija = 5.0;
 float x_lasera1, y_lasera1, x_lasera2, y_lasera2;
 float x_katapult;
 float y_katapult;
-float udaljenost_lasera1 = 15.0; // centimetara
-float ugao_lasera1 = 15.0; // stepeni
-float udaljenost_lasera2 = 30.0;
-float ugao_lasera2 = 30.0;
+float udaljenost_lasera1 = 20.0; // centimetara
+float ugao_lasera1 = 0.0; // stepeni
+float udaljenost_lasera2 = 20.0;
+float ugao_lasera2 = 0.0;
 float x2_lasera1, x2_lasera2, y2_lasera1, y2_lasera2 = 1900;
 float domet = 1900;
 float d, ugao;
@@ -17,6 +17,7 @@ float[] tacka;
 PImage laser, katapult;
 Serial myPort;
 int korak = 0;
+String inBuffer = "0";
 
 void setup(){
   size(1000,1000);
@@ -47,10 +48,10 @@ void setup(){
 }
 
 void draw(){
-  String inBuffer = myPort.readString();   
+  /*String inBuffer = myPort.readString();   
     if (inBuffer != null) {
       println(inBuffer);
-    }
+    }*/
   background(255);
   image(katapult, x_katapult-25, y_katapult-25, 50, 50);
   if(y2_lasera1 > y2_lasera2 && ((x2_lasera1 - x_katapult > 0 && x2_lasera2 - x_katapult > 0)||(x2_lasera1 - x_katapult < 0 && x2_lasera2 - x_katapult < 0))){
@@ -102,10 +103,13 @@ float[] presjek(int x1_1, int y1_1, int x1_2, int y1_2, int x2_1, int y2_1, int 
   return tacka;
 }
 
-float ugao_natezanja(int d, int v, int h){
-  float g = 9.81;
-  float ugao = 1/2*(acos((g*d*d/v*v - h)/sqrt(h*h + d*d)) + atan(d/h));
-  return ugao;
+float ugao_natezanja(float d, float v, float h){
+  float g = 9.81/100.0;
+  //float a = 1/2*(acos((g*d*d/v*v - h)/sqrt(h*h + d*d)) + atan(d/h));
+  println(degrees(asin(1/2)));
+  float a = 1/2*degrees(asin(d*g/v*v));
+  println(a);
+  return a;
 }
 
 int ugao_u_korake(float ugao, int odnos){
@@ -150,8 +154,14 @@ void keyPressed(){
        s = "OD" + Integer.toString(korak) + "q";
     }
     myPort.write(s);
-   delay(2000);
+    while(!("1".equals(inBuffer))){
+       inBuffer = myPort.readString();
+       delay(1);
+    }
    myPort.write("Nq");
+   inBuffer = "0";
+   float a = ugao_natezanja(d, 0.06, 13.5);
+   println(a);
   }
   if(key == 'G' || key == 'g'){
     myPort.write("Nq");

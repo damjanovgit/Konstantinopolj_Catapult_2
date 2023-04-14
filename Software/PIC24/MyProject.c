@@ -1,32 +1,38 @@
 const int lookup[8][4] = {{1, 0, 0, 0}, {1, 1, 0, 0}, {0, 1, 0, 0}, {0, 1, 1, 0}, {0, 0, 1, 0}, {0, 0, 1, 1}, {0, 0, 0, 1}, {1, 0, 0, 1}};
-//const int lookup[4][4] = {{0, 1, 1, 1}, {1, 0, 1, 1}, {1, 1, 0, 1}, {1, 1, 1, 0}};
+int indexes[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 char uart_ch;
 int uart_data = 0;
 int lookup_inx = 0, flag = 0;
 //int left_right = 1;
 int m = 0;
 int i = 0;
+const int pauza = 1100;
 char step_code[3] = {1, 1, 1};
 int korak1 = 0;
 char out[100] = "";
 
 static inline void rotiraj(int korak, char s[], int left_right){ // left_right = 1 - lijevo, left_right = -1 - desno
+     i = 4*s[2] + 2*s[1] + s[0];
      LATB.F6 = s[2];
      LATB.F7 = s[1];
      LATB.F8 = s[0];
      while(korak != 0){
-         LATB.F13 = lookup[i][0];
-         LATB.F12 = lookup[i][1];
-         LATB.F11 = lookup[i][2];
-         LATB.F10 = lookup[i][3];
-         Delay_us(2000);
+         LATB.F13 = lookup[indexes[i]][0];
+         LATB.F12 = lookup[indexes[i]][1];
+         LATB.F11 = lookup[indexes[i]][2];
+         LATB.F10 = lookup[indexes[i]][3];
+         Delay_us(pauza);
          korak--;
-         i+= left_right;
-         if (i >= 8)
-            i = 0;
-         if (i < 0)
-            i = 7;
+         indexes[i] += left_right;
+         if (indexes[i] >= 8 && left_right == 1)
+            indexes[i] = 0;
+         if (indexes[i] < 0  && left_right == -1)
+            indexes[i] = 7;
      }
+     LATB.F13 = 0;
+     LATB.F12 = 0;
+     LATB.F11 = 0;
+     LATB.F10 = 0;
      LATB.F6 = 1;
      LATB.F7 = 1;
      LATB.F8 = 1;
@@ -50,28 +56,36 @@ void kalibracija(){
    LATB.F7 = 0;
    LATB.F8 = 0;
    while(PORTB.F5 != 1){
-      LATB.F13 = lookup[i][0];
-      LATB.F12 = lookup[i][1];
-      LATB.F11 = lookup[i][2];
-      LATB.F10 = lookup[i][3];
-      Delay_us(2000);
-      i--;
-      if (i < 0)
-        i = 7;
+      LATB.F13 = lookup[indexes[4]][0];
+      LATB.F12 = lookup[indexes[4]][1];
+      LATB.F11 = lookup[indexes[4]][2];
+      LATB.F10 = lookup[indexes[4]][3];
+      Delay_us(pauza);
+      indexes[4]--;
+      if (indexes[4] < 0)
+        indexes[4] = 7;
    }
+   LATB.F13 = 0;
+   LATB.F12 = 0;
+   LATB.F11 = 0;
+   LATB.F10 = 0;
    LATB.F6 = 0;
    LATB.F7 = 0;
    LATB.F8 = 1;
    while(PORTB.F15 != 1){
-      LATB.F13 = lookup[i][0];
-      LATB.F12 = lookup[i][1];
-      LATB.F11 = lookup[i][2];
-      LATB.F10 = lookup[i][3];
-      Delay_us(1500);
-      i--;
-      if (i < 0)
-        i = 7;
+      LATB.F13 = lookup[indexes[1]][0];
+      LATB.F12 = lookup[indexes[1]][1];
+      LATB.F11 = lookup[indexes[1]][2];
+      LATB.F10 = lookup[indexes[1]][3];
+      Delay_us(pauza);
+      indexes[1]--;
+      if (indexes[1] < 0)
+        indexes[1] = 7;
    }
+   LATB.F13 = 0;
+   LATB.F12 = 0;
+   LATB.F11 = 0;
+   LATB.F10 = 0;
    step_code[0] = 1;
    step_code[1] = 0;
    step_code[2] = 0;
@@ -154,6 +168,7 @@ void main() {
            step_code[1] = 1;
            step_code[2] = 0;
            rotiraj(korak1, step_code, 1);
+           UART1_Write('1');
         }
         else if(out[0] == 'O' && out[1] == 'D'){
            korak1 = atoi(out+2);
@@ -161,12 +176,13 @@ void main() {
            step_code[1] = 1;
            step_code[2] = 0;
            rotiraj(korak1, step_code, -1);
+           UART1_Write('1');
         }
         else if(out[0] == 'N'){
            step_code[0] = 1;
            step_code[1] = 1;
            step_code[2] = 0;
-           rotiraj(5690, step_code, 1);
+           rotiraj(4552, step_code, 1);
         }
         else if(out[0] == 'I'){
            step_code[0] = 0;
