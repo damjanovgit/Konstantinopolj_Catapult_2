@@ -104,10 +104,10 @@ float[] presjek(int x1_1, int y1_1, int x1_2, int y1_2, int x2_1, int y2_1, int 
 }
 
 float ugao_natezanja(float d, float v, float h){
-  float g = 9.81/100.0;
-  //float a = 1/2*(acos((g*d*d/v*v - h)/sqrt(h*h + d*d)) + atan(d/h));
-  println(degrees(asin(1/2)));
-  float a = 1/2*degrees(asin(d*g/v*v));
+  //float g = 9.81;
+  //float a = 0.5*degrees(acos(((g*d*d)/(v*v) - h)/sqrt(h*h + d*d)) + atan(d/h));
+  //float a = 0.5*degrees(asin((d*g)/(v*v)));
+  float a = (d - 166)/2.525; // jednacina prave
   println(a);
   return a;
 }
@@ -160,7 +160,7 @@ void keyPressed(){
     }
    myPort.write("Nq");
    inBuffer = "0";
-   float a = ugao_natezanja(d, 0.06, 13.5);
+   float a = ugao_natezanja(d, 6, 13.5/100);
    println(a);
   }
   if(key == 'G' || key == 'g'){
