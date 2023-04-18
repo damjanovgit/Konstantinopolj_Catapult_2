@@ -17,6 +17,7 @@ float[] tacka;
 PImage laser, katapult;
 Serial myPort;
 int korak = 0;
+boolean left_right = false;
 String inBuffer = "0";
 
 void setup(){
@@ -108,7 +109,6 @@ float ugao_natezanja(float d, float v, float h){
   //float a = 0.5*degrees(acos(((g*d*d)/(v*v) - h)/sqrt(h*h + d*d)) + atan(d/h));
   //float a = 0.5*degrees(asin((d*g)/(v*v)));
   float a = (d - 166)/2.525; // jednacina prave
-  println(a);
   return a;
 }
 
@@ -128,19 +128,19 @@ float ugao(int x_cat, int y_cat, float x_tac, float y_tac){
 
 void keyPressed(){
   if(key == 'A' || key == 'a'){
-    y1 -= 0.9668;
+    y1 -= 0.17578;
     myPort.write("L1_Aq");
   }
   if(key == 'D' || key == 'd'){
-    y1 += 0.9668;
+    y1 += 0.17578;
     myPort.write("L1_Dq");
   }
   if(key == 'J' || key == 'j'){
-    y2 -= 0.9668;
+    y2 -= 0.17578;
     myPort.write("L2_Jq");
   }
   if(key == 'L' || key == 'l'){
-    y2 += 0.9668;
+    y2 += 0.17578;
     myPort.write("L2_Lq");
   }
   if(key == 'C' || key == 'c'){
@@ -148,10 +148,12 @@ void keyPressed(){
     if(ugao < 0){
        korak = ugao_u_korake(abs(ugao), 9);
        s = "OL" + Integer.toString(korak) + "q";
+       left_right = false;
     }
     else{
        korak = ugao_u_korake(ugao, 9);
        s = "OD" + Integer.toString(korak) + "q";
+       left_right = true;
     }
     myPort.write(s);
     while(!("1".equals(inBuffer))){
@@ -166,16 +168,27 @@ void keyPressed(){
     }
     inBuffer = "0";
     float a = ugao_natezanja(d, 6, 13.5/100);
-    s = "K" + Integer.toString(ugao_u_korake(a, 5)) + "q";
+    s = "KA" + Integer.toString(ugao_u_korake(a, 5)) + "q";
     myPort.write(s);
-  }
-  if(key == 'G' || key == 'g'){
-    myPort.write("Nq");
   }
   if(key == 'B' || key == 'b'){
     myPort.write("Bq");
   }
   if(key == 32){
     myPort.write("Iq");
+    delay(5000);
+    String s = "";
+    if(left_right){
+      s = "OL" + Integer.toString(korak) + "q";
+    }else{
+      s = "OD" + Integer.toString(korak) + "q";
+    }
+    myPort.write(s);
+    while(!("1".equals(inBuffer))){
+       inBuffer = myPort.readString();
+       delay(1);
+    }
+    inBuffer = "0";
+    myPort.write("Cq");
   }
 }

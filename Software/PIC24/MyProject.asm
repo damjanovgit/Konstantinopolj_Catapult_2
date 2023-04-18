@@ -36,9 +36,9 @@ MyProject_rotiraj:
 ;MyProject.c,19 :: 		while(korak != 0){
 L_MyProject_rotiraj0:
 	CP	W10, #0
-	BRA NZ	L_MyProject_rotiraj65
+	BRA NZ	L_MyProject_rotiraj72
 	GOTO	L_MyProject_rotiraj1
-L_MyProject_rotiraj65:
+L_MyProject_rotiraj72:
 ;MyProject.c,20 :: 		LATB.F13 = lookup[indexes[i]][0];
 	MOV	_i, W0
 	SL	W0, #1, W1
@@ -117,14 +117,14 @@ L_MyProject_rotiraj2:
 	ADD	W0, W1, W0
 	MOV	[W0], W0
 	CP	W0, #8
-	BRA GE	L_MyProject_rotiraj66
-	GOTO	L_MyProject_rotiraj55
-L_MyProject_rotiraj66:
+	BRA GE	L_MyProject_rotiraj73
+	GOTO	L_MyProject_rotiraj59
+L_MyProject_rotiraj73:
 	CP	W12, #1
-	BRA Z	L_MyProject_rotiraj67
-	GOTO	L_MyProject_rotiraj54
-L_MyProject_rotiraj67:
-L_MyProject_rotiraj53:
+	BRA Z	L_MyProject_rotiraj74
+	GOTO	L_MyProject_rotiraj58
+L_MyProject_rotiraj74:
+L_MyProject_rotiraj57:
 ;MyProject.c,28 :: 		indexes[i] = 0;
 	MOV	_i, W0
 	SL	W0, #1, W1
@@ -133,8 +133,8 @@ L_MyProject_rotiraj53:
 	CLR	W0
 	MOV	W0, [W1]
 ;MyProject.c,27 :: 		if (indexes[i] >= 8 && left_right == 1)
-L_MyProject_rotiraj55:
-L_MyProject_rotiraj54:
+L_MyProject_rotiraj59:
+L_MyProject_rotiraj58:
 ;MyProject.c,29 :: 		if (indexes[i] < 0  && left_right == -1)
 	MOV	_i, W0
 	SL	W0, #1, W1
@@ -142,15 +142,15 @@ L_MyProject_rotiraj54:
 	ADD	W0, W1, W0
 	MOV	[W0], W0
 	CP	W0, #0
-	BRA LT	L_MyProject_rotiraj68
-	GOTO	L_MyProject_rotiraj57
-L_MyProject_rotiraj68:
+	BRA LT	L_MyProject_rotiraj75
+	GOTO	L_MyProject_rotiraj61
+L_MyProject_rotiraj75:
 	MOV	#65535, W0
 	CP	W12, W0
-	BRA Z	L_MyProject_rotiraj69
-	GOTO	L_MyProject_rotiraj56
-L_MyProject_rotiraj69:
-L_MyProject_rotiraj52:
+	BRA Z	L_MyProject_rotiraj76
+	GOTO	L_MyProject_rotiraj60
+L_MyProject_rotiraj76:
+L_MyProject_rotiraj56:
 ;MyProject.c,30 :: 		indexes[i] = 7;
 	MOV	_i, W0
 	SL	W0, #1, W1
@@ -159,8 +159,8 @@ L_MyProject_rotiraj52:
 	MOV	#7, W0
 	MOV	W0, [W1]
 ;MyProject.c,29 :: 		if (indexes[i] < 0  && left_right == -1)
-L_MyProject_rotiraj57:
-L_MyProject_rotiraj56:
+L_MyProject_rotiraj61:
+L_MyProject_rotiraj60:
 ;MyProject.c,31 :: 		}
 	GOTO	L_MyProject_rotiraj0
 L_MyProject_rotiraj1:
@@ -202,9 +202,9 @@ _uart_interrupt:
 ;MyProject.c,44 :: 		if(uart_ch == 'q'){
 	MOV.B	#113, W1
 	CP.B	W0, W1
-	BRA Z	L__uart_interrupt71
+	BRA Z	L__uart_interrupt78
 	GOTO	L_uart_interrupt10
-L__uart_interrupt71:
+L__uart_interrupt78:
 ;MyProject.c,45 :: 		m = 0;
 	CLR	W0
 	MOV	W0, _m
@@ -307,9 +307,9 @@ L_kalibracija14:
 ;MyProject.c,65 :: 		if (indexes[4] < 0)
 	MOV	_indexes+8, W0
 	CP	W0, #0
-	BRA LT	L__kalibracija73
+	BRA LT	L__kalibracija80
 	GOTO	L_kalibracija16
-L__kalibracija73:
+L__kalibracija80:
 ;MyProject.c,66 :: 		indexes[4] = 7;
 	MOV	#7, W0
 	MOV	W0, _indexes+8
@@ -388,9 +388,9 @@ L_kalibracija19:
 ;MyProject.c,82 :: 		if (indexes[1] < 0)
 	MOV	_indexes+2, W0
 	CP	W0, #0
-	BRA LT	L__kalibracija74
+	BRA LT	L__kalibracija81
 	GOTO	L_kalibracija21
-L__kalibracija74:
+L__kalibracija81:
 ;MyProject.c,83 :: 		indexes[1] = 7;
 	MOV	#7, W0
 	MOV	W0, _indexes+2
@@ -520,9 +520,9 @@ L_main26:
 ;MyProject.c,138 :: 		if(flag == 1){
 	MOV	_flag, W0
 	CP	W0, #1
-	BRA Z	L__main76
+	BRA Z	L__main83
 	GOTO	L_main28
-L__main76:
+L__main83:
 ;MyProject.c,139 :: 		flag = 0;
 	CLR	W0
 	MOV	W0, _flag
@@ -531,9 +531,9 @@ L__main76:
 	MOV	#lo_addr(?lstr2_MyProject), W10
 	CALL	_strcmp
 	CP	W0, #0
-	BRA Z	L__main77
+	BRA Z	L__main84
 	GOTO	L_main29
-L__main77:
+L__main84:
 ;MyProject.c,142 :: 		step_code[0] = 0;
 	MOV	#lo_addr(_step_code), W1
 	CLR	W0
@@ -546,10 +546,10 @@ L__main77:
 	MOV	#lo_addr(_step_code+2), W1
 	CLR	W0
 	MOV.B	W0, [W1]
-;MyProject.c,145 :: 		rotiraj(11, step_code, 1);
+;MyProject.c,145 :: 		rotiraj(2, step_code, 1);
 	MOV	#1, W12
 	MOV	#lo_addr(_step_code), W11
-	MOV	#11, W10
+	MOV	#2, W10
 	CALL	MyProject_rotiraj
 ;MyProject.c,146 :: 		}
 	GOTO	L_main30
@@ -559,9 +559,9 @@ L_main29:
 	MOV	#lo_addr(?lstr3_MyProject), W10
 	CALL	_strcmp
 	CP	W0, #0
-	BRA Z	L__main78
+	BRA Z	L__main85
 	GOTO	L_main31
-L__main78:
+L__main85:
 ;MyProject.c,148 :: 		step_code[0] = 0;
 	MOV	#lo_addr(_step_code), W1
 	CLR	W0
@@ -574,10 +574,10 @@ L__main78:
 	MOV	#lo_addr(_step_code+2), W1
 	CLR	W0
 	MOV.B	W0, [W1]
-;MyProject.c,151 :: 		rotiraj(11, step_code, -1);
+;MyProject.c,151 :: 		rotiraj(2, step_code, -1);
 	MOV	#65535, W12
 	MOV	#lo_addr(_step_code), W11
-	MOV	#11, W10
+	MOV	#2, W10
 	CALL	MyProject_rotiraj
 ;MyProject.c,152 :: 		}
 	GOTO	L_main32
@@ -587,9 +587,9 @@ L_main31:
 	MOV	#lo_addr(?lstr4_MyProject), W10
 	CALL	_strcmp
 	CP	W0, #0
-	BRA Z	L__main79
+	BRA Z	L__main86
 	GOTO	L_main33
-L__main79:
+L__main86:
 ;MyProject.c,154 :: 		step_code[0] = 1;
 	MOV	#lo_addr(_step_code), W1
 	MOV.B	#1, W0
@@ -602,10 +602,10 @@ L__main79:
 	MOV	#lo_addr(_step_code+2), W1
 	MOV.B	#1, W0
 	MOV.B	W0, [W1]
-;MyProject.c,157 :: 		rotiraj(11, step_code, 1);
+;MyProject.c,157 :: 		rotiraj(2, step_code, 1);
 	MOV	#1, W12
 	MOV	#lo_addr(_step_code), W11
-	MOV	#11, W10
+	MOV	#2, W10
 	CALL	MyProject_rotiraj
 ;MyProject.c,158 :: 		}
 	GOTO	L_main34
@@ -615,9 +615,9 @@ L_main33:
 	MOV	#lo_addr(?lstr5_MyProject), W10
 	CALL	_strcmp
 	CP	W0, #0
-	BRA Z	L__main80
+	BRA Z	L__main87
 	GOTO	L_main35
-L__main80:
+L__main87:
 ;MyProject.c,160 :: 		step_code[0] = 1;
 	MOV	#lo_addr(_step_code), W1
 	MOV.B	#1, W0
@@ -630,10 +630,10 @@ L__main80:
 	MOV	#lo_addr(_step_code+2), W1
 	MOV.B	#1, W0
 	MOV.B	W0, [W1]
-;MyProject.c,163 :: 		rotiraj(11, step_code, -1);
+;MyProject.c,163 :: 		rotiraj(2, step_code, -1);
 	MOV	#65535, W12
 	MOV	#lo_addr(_step_code), W11
-	MOV	#11, W10
+	MOV	#2, W10
 	CALL	MyProject_rotiraj
 ;MyProject.c,164 :: 		}
 	GOTO	L_main36
@@ -643,17 +643,17 @@ L_main35:
 	MOV.B	[W0], W1
 	MOV.B	#79, W0
 	CP.B	W1, W0
-	BRA Z	L__main81
-	GOTO	L__main61
-L__main81:
+	BRA Z	L__main88
+	GOTO	L__main66
+L__main88:
 	MOV	#lo_addr(_out+1), W0
 	MOV.B	[W0], W1
 	MOV.B	#76, W0
 	CP.B	W1, W0
-	BRA Z	L__main82
-	GOTO	L__main60
-L__main82:
-L__main59:
+	BRA Z	L__main89
+	GOTO	L__main65
+L__main89:
+L__main64:
 ;MyProject.c,166 :: 		korak1 = atoi(out+2);
 	MOV	#lo_addr(_out+2), W10
 	CALL	_atoi
@@ -681,24 +681,24 @@ L__main59:
 ;MyProject.c,172 :: 		}
 	GOTO	L_main40
 ;MyProject.c,165 :: 		else if(out[0] == 'O' && out[1] == 'L'){
-L__main61:
-L__main60:
+L__main66:
+L__main65:
 ;MyProject.c,173 :: 		else if(out[0] == 'O' && out[1] == 'D'){
 	MOV	#lo_addr(_out), W0
 	MOV.B	[W0], W1
 	MOV.B	#79, W0
 	CP.B	W1, W0
-	BRA Z	L__main83
-	GOTO	L__main63
-L__main83:
+	BRA Z	L__main90
+	GOTO	L__main68
+L__main90:
 	MOV	#lo_addr(_out+1), W0
 	MOV.B	[W0], W1
 	MOV.B	#68, W0
 	CP.B	W1, W0
-	BRA Z	L__main84
-	GOTO	L__main62
-L__main84:
-L__main58:
+	BRA Z	L__main91
+	GOTO	L__main67
+L__main91:
+L__main63:
 ;MyProject.c,174 :: 		korak1 = atoi(out+2);
 	MOV	#lo_addr(_out+2), W10
 	CALL	_atoi
@@ -726,18 +726,26 @@ L__main58:
 ;MyProject.c,180 :: 		}
 	GOTO	L_main44
 ;MyProject.c,173 :: 		else if(out[0] == 'O' && out[1] == 'D'){
-L__main63:
-L__main62:
-;MyProject.c,181 :: 		else if(out[0] == 'K'){
+L__main68:
+L__main67:
+;MyProject.c,181 :: 		else if(out[0] == 'K' && out[1] == 'A'){
 	MOV	#lo_addr(_out), W0
 	MOV.B	[W0], W1
 	MOV.B	#75, W0
 	CP.B	W1, W0
-	BRA Z	L__main85
-	GOTO	L_main45
-L__main85:
-;MyProject.c,182 :: 		korak1 = atoi(out+1);
-	MOV	#lo_addr(_out+1), W10
+	BRA Z	L__main92
+	GOTO	L__main70
+L__main92:
+	MOV	#lo_addr(_out+1), W0
+	MOV.B	[W0], W1
+	MOV.B	#65, W0
+	CP.B	W1, W0
+	BRA Z	L__main93
+	GOTO	L__main69
+L__main93:
+L__main62:
+;MyProject.c,182 :: 		korak1 = atoi(out+2);
+	MOV	#lo_addr(_out+2), W10
 	CALL	_atoi
 	MOV	W0, _korak1
 ;MyProject.c,183 :: 		step_code[0] = 1;
@@ -752,53 +760,55 @@ L__main85:
 	MOV	#lo_addr(_step_code+2), W2
 	CLR	W1
 	MOV.B	W1, [W2]
-;MyProject.c,186 :: 		rotiraj(korak1, step_code, 1);
-	MOV	#1, W12
+;MyProject.c,186 :: 		rotiraj(korak1, step_code, -1);
+	MOV	#65535, W12
 	MOV	#lo_addr(_step_code), W11
 	MOV	W0, W10
 	CALL	MyProject_rotiraj
-;MyProject.c,187 :: 		UART1_Write('1');
-	MOV	#49, W10
-	CALL	_UART1_Write
-;MyProject.c,188 :: 		}
-	GOTO	L_main46
-L_main45:
-;MyProject.c,189 :: 		else if(out[0] == 'N'){
+;MyProject.c,187 :: 		}
+	GOTO	L_main48
+;MyProject.c,181 :: 		else if(out[0] == 'K' && out[1] == 'A'){
+L__main70:
+L__main69:
+;MyProject.c,188 :: 		else if(out[0] == 'N'){
 	MOV	#lo_addr(_out), W0
 	MOV.B	[W0], W1
 	MOV.B	#78, W0
 	CP.B	W1, W0
-	BRA Z	L__main86
-	GOTO	L_main47
-L__main86:
-;MyProject.c,190 :: 		step_code[0] = 1;
+	BRA Z	L__main94
+	GOTO	L_main49
+L__main94:
+;MyProject.c,189 :: 		step_code[0] = 1;
 	MOV	#lo_addr(_step_code), W1
 	MOV.B	#1, W0
 	MOV.B	W0, [W1]
-;MyProject.c,191 :: 		step_code[1] = 1;
+;MyProject.c,190 :: 		step_code[1] = 1;
 	MOV	#lo_addr(_step_code+1), W1
 	MOV.B	#1, W0
 	MOV.B	W0, [W1]
-;MyProject.c,192 :: 		step_code[2] = 0;
+;MyProject.c,191 :: 		step_code[2] = 0;
 	MOV	#lo_addr(_step_code+2), W1
 	CLR	W0
 	MOV.B	W0, [W1]
-;MyProject.c,193 :: 		rotiraj(4552, step_code, 1);
+;MyProject.c,192 :: 		rotiraj(4552, step_code, 1);
 	MOV	#1, W12
 	MOV	#lo_addr(_step_code), W11
 	MOV	#4552, W10
 	CALL	MyProject_rotiraj
+;MyProject.c,193 :: 		UART1_Write('1');
+	MOV	#49, W10
+	CALL	_UART1_Write
 ;MyProject.c,194 :: 		}
-	GOTO	L_main48
-L_main47:
+	GOTO	L_main50
+L_main49:
 ;MyProject.c,195 :: 		else if(out[0] == 'I'){
 	MOV	#lo_addr(_out), W0
 	MOV.B	[W0], W1
 	MOV.B	#73, W0
 	CP.B	W1, W0
-	BRA Z	L__main87
-	GOTO	L_main49
-L__main87:
+	BRA Z	L__main95
+	GOTO	L_main51
+L__main95:
 ;MyProject.c,196 :: 		step_code[0] = 0;
 	MOV	#lo_addr(_step_code), W1
 	CLR	W0
@@ -822,54 +832,68 @@ L__main87:
 	MOV	#2000, W10
 	CALL	MyProject_rotiraj
 ;MyProject.c,201 :: 		}
-	GOTO	L_main50
-L_main49:
-;MyProject.c,202 :: 		else if(out[0] == 'B'){
+	GOTO	L_main52
+L_main51:
+;MyProject.c,202 :: 		else if(out[0] == 'C'){
+	MOV	#lo_addr(_out), W0
+	MOV.B	[W0], W1
+	MOV.B	#67, W0
+	CP.B	W1, W0
+	BRA Z	L__main96
+	GOTO	L_main53
+L__main96:
+;MyProject.c,203 :: 		kalibracija();
+	CALL	_kalibracija
+;MyProject.c,204 :: 		}
+	GOTO	L_main54
+L_main53:
+;MyProject.c,205 :: 		else if(out[0] == 'B'){
 	MOV	#lo_addr(_out), W0
 	MOV.B	[W0], W1
 	MOV.B	#66, W0
 	CP.B	W1, W0
-	BRA Z	L__main88
-	GOTO	L_main51
-L__main88:
-;MyProject.c,203 :: 		step_code[0] = 1;
+	BRA Z	L__main97
+	GOTO	L_main55
+L__main97:
+;MyProject.c,206 :: 		step_code[0] = 1;
 	MOV	#lo_addr(_step_code), W1
 	MOV.B	#1, W0
 	MOV.B	W0, [W1]
-;MyProject.c,204 :: 		step_code[1] = 0;
+;MyProject.c,207 :: 		step_code[1] = 0;
 	MOV	#lo_addr(_step_code+1), W1
 	CLR	W0
 	MOV.B	W0, [W1]
-;MyProject.c,205 :: 		step_code[2] = 0;
+;MyProject.c,208 :: 		step_code[2] = 0;
 	MOV	#lo_addr(_step_code+2), W1
 	CLR	W0
 	MOV.B	W0, [W1]
-;MyProject.c,206 :: 		rotiraj(285, step_code, -1);
+;MyProject.c,209 :: 		rotiraj(285, step_code, -1);
 	MOV	#65535, W12
 	MOV	#lo_addr(_step_code), W11
 	MOV	#285, W10
 	CALL	MyProject_rotiraj
-;MyProject.c,207 :: 		}
-L_main51:
+;MyProject.c,210 :: 		}
+L_main55:
+L_main54:
+L_main52:
 L_main50:
 L_main48:
-L_main46:
 L_main44:
 L_main40:
 L_main36:
 L_main34:
 L_main32:
 L_main30:
-;MyProject.c,208 :: 		memset(out, 0, sizeof(out));
+;MyProject.c,211 :: 		memset(out, 0, sizeof(out));
 	MOV	#100, W12
 	CLR	W11
 	MOV	#lo_addr(_out), W10
 	CALL	_memset
-;MyProject.c,209 :: 		}
+;MyProject.c,212 :: 		}
 L_main28:
-;MyProject.c,210 :: 		}
+;MyProject.c,213 :: 		}
 	GOTO	L_main26
-;MyProject.c,211 :: 		}
+;MyProject.c,214 :: 		}
 L_end_main:
 	POP	W12
 	POP	W11

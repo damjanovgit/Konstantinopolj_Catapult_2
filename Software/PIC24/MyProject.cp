@@ -136,25 +136,25 @@ void main() {
  step_code[0] = 0;
  step_code[1] = 0;
  step_code[2] = 0;
- rotiraj(11, step_code, 1);
+ rotiraj(2, step_code, 1);
  }
  else if(strcmp("L1_D",out)==0){
  step_code[0] = 0;
  step_code[1] = 0;
  step_code[2] = 0;
- rotiraj(11, step_code, -1);
+ rotiraj(2, step_code, -1);
  }
  else if(strcmp("L2_J",out)==0){
  step_code[0] = 1;
  step_code[1] = 0;
  step_code[2] = 1;
- rotiraj(11, step_code, 1);
+ rotiraj(2, step_code, 1);
  }
  else if(strcmp("L2_L",out)==0){
  step_code[0] = 1;
  step_code[1] = 0;
  step_code[2] = 1;
- rotiraj(11, step_code, -1);
+ rotiraj(2, step_code, -1);
  }
  else if(out[0] == 'O' && out[1] == 'L'){
  korak1 = atoi(out+2);
@@ -172,19 +172,19 @@ void main() {
  rotiraj(korak1, step_code, -1);
  UART1_Write('1');
  }
- else if(out[0] == 'K'){
- korak1 = atoi(out+1);
+ else if(out[0] == 'K' && out[1] == 'A'){
+ korak1 = atoi(out+2);
  step_code[0] = 1;
  step_code[1] = 0;
  step_code[2] = 0;
- rotiraj(korak1, step_code, 1);
- UART1_Write('1');
+ rotiraj(korak1, step_code, -1);
  }
  else if(out[0] == 'N'){
  step_code[0] = 1;
  step_code[1] = 1;
  step_code[2] = 0;
  rotiraj(4552, step_code, 1);
+ UART1_Write('1');
  }
  else if(out[0] == 'I'){
  step_code[0] = 0;
@@ -192,6 +192,9 @@ void main() {
  step_code[2] = 1;
  rotiraj(2000, step_code, 1);
  rotiraj(2000, step_code, -1);
+ }
+ else if(out[0] == 'C'){
+ kalibracija();
  }
  else if(out[0] == 'B'){
  step_code[0] = 1;
