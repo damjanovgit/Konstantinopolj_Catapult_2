@@ -178,6 +178,14 @@ void main() {
            rotiraj(korak1, step_code, -1);
            UART1_Write('1');
         }
+        else if(out[0] == 'K'){
+           korak1 = atoi(out+1);
+           step_code[0] = 1;
+           step_code[1] = 0;
+           step_code[2] = 0;
+           rotiraj(korak1, step_code, 1);
+           UART1_Write('1');
+        }
         else if(out[0] == 'N'){
            step_code[0] = 1;
            step_code[1] = 1;

@@ -158,10 +158,16 @@ void keyPressed(){
        inBuffer = myPort.readString();
        delay(1);
     }
-   myPort.write("Nq");
-   inBuffer = "0";
-   float a = ugao_natezanja(d, 6, 13.5/100);
-   println(a);
+    myPort.write("Nq");
+    inBuffer = "0";
+    while(!("1".equals(inBuffer))){
+       inBuffer = myPort.readString();
+       delay(1);
+    }
+    inBuffer = "0";
+    float a = ugao_natezanja(d, 6, 13.5/100);
+    s = "K" + Integer.toString(ugao_u_korake(a, 5)) + "q";
+    myPort.write(s);
   }
   if(key == 'G' || key == 'g'){
     myPort.write("Nq");
