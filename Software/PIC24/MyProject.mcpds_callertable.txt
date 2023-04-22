@@ -16,7 +16,6 @@ main
 		UART1_Write
 	kalibracija
 		rotiraj
-	strcmp
 	rotiraj
 	atoi
 		isdigit

@@ -1,6 +1,6 @@
 #line 1 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
 const int lookup[8][4] = {{1, 0, 0, 0}, {1, 1, 0, 0}, {0, 1, 0, 0}, {0, 1, 1, 0}, {0, 0, 1, 0}, {0, 0, 1, 1}, {0, 0, 0, 1}, {1, 0, 0, 1}};
-int indexes[8] = {0, 0, 0, 0, 0, 0, 0, 0};
+signed char indexes[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 char uart_ch;
 int uart_data = 0;
 int lookup_inx = 0, flag = 0;
@@ -17,18 +17,18 @@ static inline void rotiraj(int korak, char s[], int left_right){
  LATB.F6 = s[2];
  LATB.F7 = s[1];
  LATB.F8 = s[0];
- while(korak != 0){
+ while(korak > 0){
  LATB.F13 = lookup[indexes[i]][0];
  LATB.F12 = lookup[indexes[i]][1];
  LATB.F11 = lookup[indexes[i]][2];
  LATB.F10 = lookup[indexes[i]][3];
- Delay_us(pauza);
  korak--;
  indexes[i] += left_right;
  if (indexes[i] >= 8 && left_right == 1)
  indexes[i] = 0;
  if (indexes[i] < 0 && left_right == -1)
  indexes[i] = 7;
+ Delay_us(pauza);
  }
  LATB.F13 = 0;
  LATB.F12 = 0;
@@ -56,7 +56,9 @@ void kalibracija(){
  LATB.F6 = 1;
  LATB.F7 = 0;
  LATB.F8 = 0;
- while(PORTB.F5 != 1){
+ while(1){
+ if(PORTB.F5 == 1)
+ break;
  LATB.F13 = lookup[indexes[4]][0];
  LATB.F12 = lookup[indexes[4]][1];
  LATB.F11 = lookup[indexes[4]][2];
@@ -70,10 +72,16 @@ void kalibracija(){
  LATB.F12 = 0;
  LATB.F11 = 0;
  LATB.F10 = 0;
+ step_code[0] = 0;
+ step_code[1] = 0;
+ step_code[2] = 1;
+ rotiraj(910, step_code, 1);
  LATB.F6 = 0;
  LATB.F7 = 0;
  LATB.F8 = 1;
- while(PORTB.F15 != 1){
+ while(1){
+ if(PORTB.F15 == 1)
+ break;
  LATB.F13 = lookup[indexes[1]][0];
  LATB.F12 = lookup[indexes[1]][1];
  LATB.F11 = lookup[indexes[1]][2];
@@ -94,7 +102,7 @@ void kalibracija(){
 }
 
 void main() {
-#line 98 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
+#line 106 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
  OSCDIVbits.DIV = 0;
 
 
@@ -109,7 +117,7 @@ void main() {
 
  LATA = 0;
  LATB = 0;
-#line 117 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
+#line 125 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
  Unlock_IOLOCK();
  PPS_Mapping_NoLock(3, _INPUT, _U1RX);
  PPS_Mapping_NoLock(2, _OUTPUT, _U1TX);
@@ -117,12 +125,12 @@ void main() {
 
  IEC0bits.U1RXIE = 1;
  IFS0bits.U1RXIF = 0;
-#line 126 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
+#line 134 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
  UART1_Init(9600);
 
  Delay_ms(100);
  UART1_Write_Text("OK");
-#line 132 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
+#line 140 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
  kalibracija();
  LATB.F6 = 1;
  LATB.F7 = 1;
@@ -131,30 +139,29 @@ void main() {
  while(1) {
  if(flag == 1){
  flag = 0;
-
- if(strcmp("L1_A",out)==0){
+ if(out[0] == 'A'){
  step_code[0] = 0;
  step_code[1] = 0;
  step_code[2] = 0;
- rotiraj(2, step_code, 1);
+ rotiraj(20, step_code, 1);
  }
- else if(strcmp("L1_D",out)==0){
+ else if(out[0] == 'D'){
  step_code[0] = 0;
  step_code[1] = 0;
  step_code[2] = 0;
- rotiraj(2, step_code, -1);
+ rotiraj(20, step_code, -1);
  }
- else if(strcmp("L2_J",out)==0){
+ else if(out[0] == 'J'){
  step_code[0] = 1;
  step_code[1] = 0;
  step_code[2] = 1;
- rotiraj(2, step_code, 1);
+ rotiraj(20, step_code, 1);
  }
- else if(strcmp("L2_L",out)==0){
+ else if(out[0] == 'L'){
  step_code[0] = 1;
  step_code[1] = 0;
  step_code[2] = 1;
- rotiraj(2, step_code, -1);
+ rotiraj(20, step_code, -1);
  }
  else if(out[0] == 'O' && out[1] == 'L'){
  korak1 = atoi(out+2);

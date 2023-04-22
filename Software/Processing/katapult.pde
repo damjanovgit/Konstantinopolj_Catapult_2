@@ -6,10 +6,10 @@ float rezolucija = 5.0;
 float x_lasera1, y_lasera1, x_lasera2, y_lasera2;
 float x_katapult;
 float y_katapult;
-float udaljenost_lasera1 = 20.0; // centimetara
-float ugao_lasera1 = 0.0; // stepeni
-float udaljenost_lasera2 = 20.0;
-float ugao_lasera2 = 0.0;
+float udaljenost_lasera1 = 35.0; // centimetara
+float ugao_lasera1 = 25.0; // stepeni
+float udaljenost_lasera2 = 40.0;
+float ugao_lasera2 = 10.0;
 float x2_lasera1, x2_lasera2, y2_lasera1, y2_lasera2 = 1900;
 float domet = 1900;
 float d, ugao;
@@ -21,8 +21,8 @@ boolean left_right = false;
 String inBuffer = "0";
 
 void setup(){
-  size(1000,1000);
-  //fullScreen();
+  //size(1000,1000);
+  fullScreen();
   x_lasera1 = udaljenost_lasera1 * sin(radians(ugao_lasera1)) * rezolucija;
   x_lasera2 = udaljenost_lasera2 * sin(radians(ugao_lasera2)) * rezolucija;
   y_lasera1 = udaljenost_lasera1 * cos(radians(ugao_lasera1)) * rezolucija;
@@ -49,10 +49,6 @@ void setup(){
 }
 
 void draw(){
-  /*String inBuffer = myPort.readString();   
-    if (inBuffer != null) {
-      println(inBuffer);
-    }*/
   background(255);
   image(katapult, x_katapult-25, y_katapult-25, 50, 50);
   if(y2_lasera1 > y2_lasera2 && ((x2_lasera1 - x_katapult > 0 && x2_lasera2 - x_katapult > 0)||(x2_lasera1 - x_katapult < 0 && x2_lasera2 - x_katapult < 0))){
@@ -104,12 +100,8 @@ float[] presjek(int x1_1, int y1_1, int x1_2, int y1_2, int x2_1, int y2_1, int 
   return tacka;
 }
 
-float ugao_natezanja(float d, float v, float h){
-  //float g = 9.81;
-  //float a = 0.5*degrees(acos(((g*d*d)/(v*v) - h)/sqrt(h*h + d*d)) + atan(d/h));
-  //float a = 0.5*degrees(asin((d*g)/(v*v)));
-  float a = (d - 166)/2.525; // jednacina prave
-  return a;
+float ugao_natezanja(float d){
+  return (d - 166)/2.525; // jednacina prave;
 }
 
 int ugao_u_korake(float ugao, int odnos){
@@ -128,30 +120,30 @@ float ugao(int x_cat, int y_cat, float x_tac, float y_tac){
 
 void keyPressed(){
   if(key == 'A' || key == 'a'){
-    y1 -= 0.17578;
-    myPort.write("L1_Aq");
+    y1 -= 1.2;
+    myPort.write("Aq");
   }
   if(key == 'D' || key == 'd'){
-    y1 += 0.17578;
-    myPort.write("L1_Dq");
+    y1 += 1.2;
+    myPort.write("Dq");
   }
   if(key == 'J' || key == 'j'){
-    y2 -= 0.17578;
-    myPort.write("L2_Jq");
+    y2 -= 1.2;
+    myPort.write("Jq");
   }
   if(key == 'L' || key == 'l'){
-    y2 += 0.17578;
-    myPort.write("L2_Lq");
+    y2 += 1.2;
+    myPort.write("Lq");
   }
   if(key == 'C' || key == 'c'){
     String s = "";
     if(ugao < 0){
-       korak = ugao_u_korake(abs(ugao), 9);
+       korak = ugao_u_korake(abs(ugao), 10);
        s = "OL" + Integer.toString(korak) + "q";
        left_right = false;
     }
     else{
-       korak = ugao_u_korake(ugao, 9);
+       korak = ugao_u_korake(ugao, 10);
        s = "OD" + Integer.toString(korak) + "q";
        left_right = true;
     }
@@ -167,12 +159,13 @@ void keyPressed(){
        delay(1);
     }
     inBuffer = "0";
-    float a = ugao_natezanja(d, 6, 13.5/100);
+    float a = ugao_natezanja(d);
     s = "KA" + Integer.toString(ugao_u_korake(a, 5)) + "q";
     myPort.write(s);
   }
-  if(key == 'B' || key == 'b'){
-    myPort.write("Bq");
+  if(key == 'S' || key == 's'){
+    y1 = 0;
+    y2 = 0;
   }
   if(key == 32){
     myPort.write("Iq");
