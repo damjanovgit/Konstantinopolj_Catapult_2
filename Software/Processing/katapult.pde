@@ -6,10 +6,10 @@ float rezolucija = 5.0;
 float x_lasera1, y_lasera1, x_lasera2, y_lasera2;
 float x_katapult;
 float y_katapult;
-float udaljenost_lasera1 = 35.0; // centimetara
-float ugao_lasera1 = 25.0; // stepeni
-float udaljenost_lasera2 = 40.0;
-float ugao_lasera2 = 10.0;
+float udaljenost_lasera1 = 20.0; // centimetara
+float ugao_lasera1 = 0.0; // stepeni
+float udaljenost_lasera2 = 20.0;
+float ugao_lasera2 = 0.0;
 float x2_lasera1, x2_lasera2, y2_lasera1, y2_lasera2 = 1900;
 float domet = 1900;
 float d, ugao;
@@ -101,7 +101,17 @@ float[] presjek(int x1_1, int y1_1, int x1_2, int y1_2, int x2_1, int y2_1, int 
 }
 
 float ugao_natezanja(float d){
-  return (d - 166)/2.525; // jednacina prave;
+  if(d < 108)
+    return (d - 83)/1.26;
+  else if(d < 140)
+    return (d - 104)/1.6;
+  else if(d < 166)
+    return (d - 140)/1.185;
+  else if(d < 216)
+    return (d - 166)/2.525;
+  else if(d < 281)
+    return (d - 216)/3.28;
+  return 0.0;
 }
 
 int ugao_u_korake(float ugao, int odnos){
@@ -152,7 +162,16 @@ void keyPressed(){
        inBuffer = myPort.readString();
        delay(1);
     }
-    myPort.write("Nq");
+    if(d < 108)
+      myPort.write("N1q");
+    else if(d < 140)
+      myPort.write("N2q");
+    else if(d < 166)
+      myPort.write("N3q");
+    else if(d < 216)
+      myPort.write("N4q");
+    else
+      myPort.write("N5q");
     inBuffer = "0";
     while(!("1".equals(inBuffer))){
        inBuffer = myPort.readString();

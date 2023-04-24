@@ -748,6 +748,7 @@ c3evt_bit
 c3out
 c3out
 c3out_bit
+calibration
 cch
 cch
 cch
@@ -4376,7 +4377,6 @@ jtagip1_bit
 jtagip2
 jtagip2
 jtagip2_bit
-kalibracija
 korak1
 labs
 last
@@ -4475,7 +4475,6 @@ lock_
 lock_bit
 lock_iolock
 lookup
-lookup_inx
 lowif
 lowif
 lowif
@@ -7534,7 +7533,6 @@ u6txip2
 u6txip2
 u6txip2_bit
 uart_ch
-uart_data
 uart_data_ready
 uart_interrupt
 uart_rd_ptr

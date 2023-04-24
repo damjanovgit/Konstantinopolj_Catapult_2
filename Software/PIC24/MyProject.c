@@ -178,11 +178,39 @@ void main() {
            step_code[2] = 0;
            rotate(korak1, step_code, -1);
         }
-        else if(out[0] == 'N'){
+        else if(out[0] == 'N' && out[1] == '1'){
            step_code[0] = 1;
            step_code[1] = 1;
            step_code[2] = 0;
-           rotate(4552, step_code, 1); // 80 stepeni 4552, 40 stepeni 2276
+           rotate(2276, step_code, 1); // 40 stepeni
+           UART1_Write('1');
+        }
+        else if(out[0] == 'N' && out[1] == '2'){
+           step_code[0] = 1;
+           step_code[1] = 1;
+           step_code[2] = 0;
+           rotate(2845, step_code, 1); // 50 stepeni
+           UART1_Write('1');
+        }
+        else if(out[0] == 'N' && out[1] == '3'){
+           step_code[0] = 1;
+           step_code[1] = 1;
+           step_code[2] = 0;
+           rotate(3840, step_code, 1); // 67.5 stepeni
+           UART1_Write('1');
+        }
+        else if(out[0] == 'N' && out[1] == '4'){
+           step_code[0] = 1;
+           step_code[1] = 1;
+           step_code[2] = 0;
+           rotate(4552, step_code, 1); // 80 stepeni
+           UART1_Write('1');
+        }
+        else if(out[0] == 'N' && out[1] == '5'){
+           step_code[0] = 1;
+           step_code[1] = 1;
+           step_code[2] = 0;
+           rotate(5916, step_code, 1); // 104 stepeni
            UART1_Write('1');
         }
         else if(out[0] == 'I'){

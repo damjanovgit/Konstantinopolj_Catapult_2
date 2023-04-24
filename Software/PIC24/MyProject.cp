@@ -2,9 +2,7 @@
 const int lookup[8][4] = {{1, 0, 0, 0}, {1, 1, 0, 0}, {0, 1, 0, 0}, {0, 1, 1, 0}, {0, 0, 1, 0}, {0, 0, 1, 1}, {0, 0, 0, 1}, {1, 0, 0, 1}};
 signed char indexes[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 char uart_ch;
-int uart_data = 0;
-int lookup_inx = 0, flag = 0;
-
+int flag = 0;
 int m = 0;
 int i = 0;
 const int pauza = 1100;
@@ -12,17 +10,17 @@ char step_code[3] = {1, 1, 1};
 int korak1 = 0;
 char out[100] = "";
 
-static inline void rotiraj(int korak, char s[], int left_right){
+static inline void rotate(int step, char s[], int left_right){
  i = 4*s[2] + 2*s[1] + s[0];
  LATB.F6 = s[2];
  LATB.F7 = s[1];
  LATB.F8 = s[0];
- while(korak > 0){
+ while(step > 0){
  LATB.F13 = lookup[indexes[i]][0];
  LATB.F12 = lookup[indexes[i]][1];
  LATB.F11 = lookup[indexes[i]][2];
  LATB.F10 = lookup[indexes[i]][3];
- korak--;
+ step--;
  indexes[i] += left_right;
  if (indexes[i] >= 8 && left_right == 1)
  indexes[i] = 0;
@@ -52,7 +50,7 @@ void uart_interrupt() iv IVT_ADDR_U1RXINTERRUPT ics ICS_AUTO {
  }
 }
 
-void kalibracija(){
+void calibration(){
  LATB.F6 = 1;
  LATB.F7 = 0;
  LATB.F8 = 0;
@@ -75,7 +73,7 @@ void kalibracija(){
  step_code[0] = 0;
  step_code[1] = 0;
  step_code[2] = 1;
- rotiraj(910, step_code, 1);
+ rotate(910, step_code, 1);
  LATB.F6 = 0;
  LATB.F7 = 0;
  LATB.F8 = 1;
@@ -98,13 +96,11 @@ void kalibracija(){
  step_code[0] = 1;
  step_code[1] = 0;
  step_code[2] = 0;
- rotiraj(3000, step_code, 1);
+ rotate(3000, step_code, 1);
 }
 
 void main() {
-#line 106 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
  OSCDIVbits.DIV = 0;
-
 
  ANSA = 0;
  ANSB = 0;
@@ -117,7 +113,7 @@ void main() {
 
  LATA = 0;
  LATB = 0;
-#line 125 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
+
  Unlock_IOLOCK();
  PPS_Mapping_NoLock(3, _INPUT, _U1RX);
  PPS_Mapping_NoLock(2, _OUTPUT, _U1TX);
@@ -125,13 +121,10 @@ void main() {
 
  IEC0bits.U1RXIE = 1;
  IFS0bits.U1RXIF = 0;
-#line 134 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
- UART1_Init(9600);
 
+ UART1_Init(9600);
  Delay_ms(100);
- UART1_Write_Text("OK");
-#line 140 "C:/Users/Medion/Desktop/4.godina/7.semestar/Mikrokontrolerski sistemi/Konstantinopolj_Catapult_2/Software/PIC24/MyProject.c"
- kalibracija();
+ calibration();
  LATB.F6 = 1;
  LATB.F7 = 1;
  LATB.F8 = 1;
@@ -143,32 +136,32 @@ void main() {
  step_code[0] = 0;
  step_code[1] = 0;
  step_code[2] = 0;
- rotiraj(20, step_code, 1);
+ rotate(20, step_code, 1);
  }
  else if(out[0] == 'D'){
  step_code[0] = 0;
  step_code[1] = 0;
  step_code[2] = 0;
- rotiraj(20, step_code, -1);
+ rotate(20, step_code, -1);
  }
  else if(out[0] == 'J'){
  step_code[0] = 1;
  step_code[1] = 0;
  step_code[2] = 1;
- rotiraj(20, step_code, 1);
+ rotate(20, step_code, 1);
  }
  else if(out[0] == 'L'){
  step_code[0] = 1;
  step_code[1] = 0;
  step_code[2] = 1;
- rotiraj(20, step_code, -1);
+ rotate(20, step_code, -1);
  }
  else if(out[0] == 'O' && out[1] == 'L'){
  korak1 = atoi(out+2);
  step_code[0] = 0;
  step_code[1] = 1;
  step_code[2] = 0;
- rotiraj(korak1, step_code, 1);
+ rotate(korak1, step_code, 1);
  UART1_Write('1');
  }
  else if(out[0] == 'O' && out[1] == 'D'){
@@ -176,7 +169,7 @@ void main() {
  step_code[0] = 0;
  step_code[1] = 1;
  step_code[2] = 0;
- rotiraj(korak1, step_code, -1);
+ rotate(korak1, step_code, -1);
  UART1_Write('1');
  }
  else if(out[0] == 'K' && out[1] == 'A'){
@@ -184,30 +177,58 @@ void main() {
  step_code[0] = 1;
  step_code[1] = 0;
  step_code[2] = 0;
- rotiraj(korak1, step_code, -1);
+ rotate(korak1, step_code, -1);
  }
- else if(out[0] == 'N'){
+ else if(out[0] == 'N' && out[1] == '1'){
  step_code[0] = 1;
  step_code[1] = 1;
  step_code[2] = 0;
- rotiraj(4552, step_code, 1);
+ rotate(2276, step_code, 1);
+ UART1_Write('1');
+ }
+ else if(out[0] == 'N' && out[1] == '2'){
+ step_code[0] = 1;
+ step_code[1] = 1;
+ step_code[2] = 0;
+ rotate(2845, step_code, 1);
+ UART1_Write('1');
+ }
+ else if(out[0] == 'N' && out[1] == '3'){
+ step_code[0] = 1;
+ step_code[1] = 1;
+ step_code[2] = 0;
+ rotate(3840, step_code, 1);
+ UART1_Write('1');
+ }
+ else if(out[0] == 'N' && out[1] == '4'){
+ step_code[0] = 1;
+ step_code[1] = 1;
+ step_code[2] = 0;
+ rotate(4552, step_code, 1);
+ UART1_Write('1');
+ }
+ else if(out[0] == 'N' && out[1] == '5'){
+ step_code[0] = 1;
+ step_code[1] = 1;
+ step_code[2] = 0;
+ rotate(5916, step_code, 1);
  UART1_Write('1');
  }
  else if(out[0] == 'I'){
  step_code[0] = 0;
  step_code[1] = 0;
  step_code[2] = 1;
- rotiraj(2000, step_code, 1);
- rotiraj(2000, step_code, -1);
+ rotate(2000, step_code, 1);
+ rotate(2000, step_code, -1);
  }
  else if(out[0] == 'C'){
- kalibracija();
+ calibration();
  }
  else if(out[0] == 'B'){
  step_code[0] = 1;
  step_code[1] = 0;
  step_code[2] = 0;
- rotiraj(285, step_code, -1);
+ rotate(285, step_code, -1);
  }
  memset(out, 0, sizeof(out));
  }
