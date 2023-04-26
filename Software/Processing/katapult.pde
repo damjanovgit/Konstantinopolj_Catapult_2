@@ -9,7 +9,7 @@ float y_katapult;
 float udaljenost_lasera1 = 20.0; // centimetara
 float ugao_lasera1 = 0.0; // stepeni
 float udaljenost_lasera2 = 20.0;
-float ugao_lasera2 = 0.0;
+float ugao_lasera2 = -10.0;
 float x2_lasera1, x2_lasera2, y2_lasera1, y2_lasera2 = 1900;
 float domet = 1900;
 float d, ugao;
@@ -19,6 +19,8 @@ Serial myPort;
 int korak = 0;
 boolean left_right = false;
 String inBuffer = "0";
+
+float udaljenost_tekst, nagib_kasike_tekst, koraci_kasike_tekst, nagib_katapulta_tekst, koraci_nagiba_tekst, ugao_zakretanja_tekst, koraci_zakretanja_tekst;
 
 void setup(){
   //size(1000,1000);
@@ -51,6 +53,7 @@ void setup(){
 void draw(){
   background(255);
   image(katapult, x_katapult-25, y_katapult-25, 50, 50);
+  textSize(15);
   if(y2_lasera1 > y2_lasera2 && ((x2_lasera1 - x_katapult > 0 && x2_lasera2 - x_katapult > 0)||(x2_lasera1 - x_katapult < 0 && x2_lasera2 - x_katapult < 0))){
     tacka = presjek((int)x_lasera1, (int)y_lasera1, (int)x2_lasera1, (int)y2_lasera1, (int)x_lasera2, (int)y_lasera2 , (int)x2_lasera2,(int)y2_lasera2);
     d = distance((int)x_katapult, (int)y_katapult, tacka[0], tacka[1]);
@@ -69,6 +72,15 @@ void draw(){
   fill(0, 0, 0);
   text(udaljenost_lasera2 + " cm", (x_katapult+x_lasera2)/2, (y_katapult+y_lasera2)/2);
   line(x_lasera2, y_lasera2, x_katapult, y_katapult);
+  
+  textSize(50);
+  text("Udaljenost: " + String.format(java.util.Locale.US,"%.2f", udaljenost_tekst) + " cm", width/2 - 300, height/2);
+  text("Nagib kasike u stepenima: " + String.format(java.util.Locale.US,"%.2f", nagib_kasike_tekst), width/2 - 300, height/2 + 50);
+  text("Nagib kasike u polukoracima: " + String.format(java.util.Locale.US,"%.2f", koraci_kasike_tekst), width/2 - 300, height/2 + 100);
+  text("Nagib katapulta u stepenima: " + String.format(java.util.Locale.US,"%.2f", nagib_katapulta_tekst), width/2 - 300, height/2 + 150);
+  text("Nagib katapulta u polukoracima: " + String.format(java.util.Locale.US,"%.2f", koraci_nagiba_tekst), width/2 - 300, height/2 + 200);
+  text("Zakretanje katapulta u stepenima: " + String.format(java.util.Locale.US,"%.2f", ugao_zakretanja_tekst), width/2 - 300, height/2 + 250);
+  text("Zakretanje katapulta u polukoracima: " + String.format(java.util.Locale.US,"%.2f", koraci_zakretanja_tekst), width/2 - 300, height/2 + 300);
   
   stroke(255,0,0);
   pushMatrix();
@@ -187,6 +199,23 @@ void keyPressed(){
     y2 = 0;
   }
   if(key == 32){
+    udaljenost_tekst = d;
+    if(udaljenost_tekst < 108)
+      nagib_kasike_tekst = 40.0;
+    else if(udaljenost_tekst < 140)
+      nagib_kasike_tekst = 50.0;
+    else if(udaljenost_tekst < 166)
+      nagib_kasike_tekst = 67.5;
+    else if(udaljenost_tekst < 216)
+      nagib_kasike_tekst = 80.0;
+    else
+      nagib_kasike_tekst = 104.0;
+    koraci_kasike_tekst = ugao_u_korake(nagib_kasike_tekst, 5);
+    nagib_katapulta_tekst = ugao_natezanja(udaljenost_tekst);
+    koraci_nagiba_tekst = ugao_u_korake(nagib_katapulta_tekst, 5);
+    ugao_zakretanja_tekst = ugao;
+    koraci_zakretanja_tekst = ugao_u_korake(abs(ugao_zakretanja_tekst), 10);
+    
     myPort.write("Iq");
     delay(5000);
     String s = "";
