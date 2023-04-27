@@ -9,7 +9,7 @@ float y_katapult;
 float udaljenost_lasera1 = 20.0; // centimetara
 float ugao_lasera1 = 0.0; // stepeni
 float udaljenost_lasera2 = 20.0;
-float ugao_lasera2 = -10.0;
+float ugao_lasera2 = 0.0;
 float x2_lasera1, x2_lasera2, y2_lasera1, y2_lasera2 = 1900;
 float domet = 1900;
 float d, ugao;
@@ -158,6 +158,23 @@ void keyPressed(){
     myPort.write("Lq");
   }
   if(key == 'C' || key == 'c'){
+    udaljenost_tekst = d;
+    if(udaljenost_tekst < 108)
+      nagib_kasike_tekst = 40.0;
+    else if(udaljenost_tekst < 140)
+      nagib_kasike_tekst = 50.0;
+    else if(udaljenost_tekst < 166)
+      nagib_kasike_tekst = 67.5;
+    else if(udaljenost_tekst < 216)
+      nagib_kasike_tekst = 80.0;
+    else
+      nagib_kasike_tekst = 104.0;
+    koraci_kasike_tekst = ugao_u_korake(nagib_kasike_tekst, 5);
+    nagib_katapulta_tekst = ugao_natezanja(udaljenost_tekst);
+    koraci_nagiba_tekst = ugao_u_korake(nagib_katapulta_tekst, 5);
+    ugao_zakretanja_tekst = ugao;
+    koraci_zakretanja_tekst = ugao_u_korake(abs(ugao_zakretanja_tekst), 10);
+    
     String s = "";
     if(ugao < 0){
        korak = ugao_u_korake(abs(ugao), 10);
@@ -199,23 +216,6 @@ void keyPressed(){
     y2 = 0;
   }
   if(key == 32){
-    udaljenost_tekst = d;
-    if(udaljenost_tekst < 108)
-      nagib_kasike_tekst = 40.0;
-    else if(udaljenost_tekst < 140)
-      nagib_kasike_tekst = 50.0;
-    else if(udaljenost_tekst < 166)
-      nagib_kasike_tekst = 67.5;
-    else if(udaljenost_tekst < 216)
-      nagib_kasike_tekst = 80.0;
-    else
-      nagib_kasike_tekst = 104.0;
-    koraci_kasike_tekst = ugao_u_korake(nagib_kasike_tekst, 5);
-    nagib_katapulta_tekst = ugao_natezanja(udaljenost_tekst);
-    koraci_nagiba_tekst = ugao_u_korake(nagib_katapulta_tekst, 5);
-    ugao_zakretanja_tekst = ugao;
-    koraci_zakretanja_tekst = ugao_u_korake(abs(ugao_zakretanja_tekst), 10);
-    
     myPort.write("Iq");
     delay(5000);
     String s = "";
